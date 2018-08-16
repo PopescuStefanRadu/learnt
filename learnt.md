@@ -1,4 +1,4 @@
-#Java 
+# Java 
 ## Concurrency
 
  - While it may seem that field values set in a constructor are the first values written to those fields and therefore that there are no "older"
