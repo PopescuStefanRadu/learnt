@@ -135,6 +135,7 @@ Solution: use RedirectAttributes::addFlashAttributes /TODO check
  - ng-content + @ContentChild() pt cand vreau ca directiva sa foloseasca ce 
 este in interiorul <app-component-name></app-component-name>
  - https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json - angular-ci options for serve, etc.
+ - https://github.com/angular/angular-cli/wiki/angular-workspace angular cli schema
 
 # Groovy
 
