@@ -1,4 +1,9 @@
 # Java
+
+## Streams
+
+ - ``Predicate`` ``.and`` and ``.or`` are evaluated in a chain from left to right :(
+ - 
  
 ## Concurrency
 
