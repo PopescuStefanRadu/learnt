@@ -35,6 +35,18 @@
  - replication factor can be managed per-file
  - file permissions x is ignored for files, x for directory means it can be accessed
 
+### AVRO
+
+Schema used to read data needs not be identical to the schema that is used to write the data. Each app can use its own schema.
+
+Avro is compressable and splittable.
+
+Java mapping - Specific - domain oriented when you have the schema, Generic (int, bool etc.), Reflect
+
+### Parquet
+
+Column-oriented. Can handle deeply nested structures
+
 ### NameNode Replication
 
  - atomic write to an NFS mount
@@ -167,6 +179,6 @@ Deploy/manage long-running data access apps in Hadoop using YARN.
 
 data storage & retrieval with cell-level access control
 
-
+#NiFI & MiNiFi
 
 
