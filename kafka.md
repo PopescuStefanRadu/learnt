@@ -260,6 +260,8 @@ After auto.commit.interval.ms passes, the last offset received in poll() is comm
 
 Groupless consumers - for when you want to assign yourself to partitions and not subscribe to them, complete freedom ;)
 
+``ConsumerRebalanceListener`` to handle rebalances
+
 # Kafka internals
 
 Each broker registers itself with its unique id in Zookeeper using an ephemeral node. Components subscribe to the /brokers/ids path.
