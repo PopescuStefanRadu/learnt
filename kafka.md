@@ -1,3 +1,4 @@
+
 max.poll.records + max.poll.interval.ms - max number of records received in a poll, if a consumer cannot finish consuming all the messages in that poll during max.poll.interval.ms then it will be considered failed -> rebalancing -> consumer was fine and now re-registers itself -> rebalancing again. This can lead to multiple message consumption duplicates
 
 kafka - distributed commit log / distribute streaming platform
@@ -370,6 +371,26 @@ Burrow = consumer lag checker by LinkedIn
 Coupling -> as little as possible pls.
 
 TODO pag 140 - Coupling and Agility - loss of metadata
+
+MirrorMaker, if SSL'd put closer to source since it is there is only one producer also, you need to send it encrypted. Better to encrypt on consumer. Otherwise put MirrorMaker closer to destination, since you can lose less data that way, maybe consume twice, but at least produce once.
+
+Could use 2 MirrorMakers one on source, one on dest, in same group.
+
+
+https://eng.uber.com/ureplicator/
+
+kafka-console-consumer formatters: 
+
+ - ``kafka.tools.LoggingMessageFormatter``: prints msg at info level: timestamp, key, value
+ - ``kafka.tools.ChecksumMessageFormatter``
+ - ``kafka.tools.NoOpMessageFormatter``
+ - ``kafka.tools.DefaultMessageFormatter`` has --property options:
+   - print.timestam
+   - print.key
+   - key.separator
+   - line.separator
+   - key.deserializer
+   - value.deserializer - use CLASSPATH env variable to add Java class to classpath
 
 
 
