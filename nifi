@@ -1,0 +1,5 @@
+https://blogs.apache.org/nifi/ -- spark integration with nifi
+
+nifi-registry Event Hooks 
+
+./nifi.sh install name-of-service
