@@ -209,6 +209,7 @@ Important producer conf:
 | max.request.size | how big a batch can be, this caps the message too |
 | max.in.flight.requests.per.connection | how many messages can be sent without receiving a response from the server, 1 means messages keep their order |
 | receive.buffer.bytes & send.buffer.bytes | TCP socket buffers, -1 means OS values |
+| log.message.timestamp.type | CreateTime or LogAppendTime or set directly using api|
 
 
 ## Consumers
