@@ -245,7 +245,7 @@ Important consumer conf:
 
 ### Commits and offsets
 
-Offsets are done by sending a message to a special __consumer_offsets topic where offsets for each partition are kept. 
+Offsets are done by sending a message to a special \_\_consumer\_offsets topic where offsets for each partition are kept. 
 
 If the commited offset is smaller than the offset of the last message the client processed, the messages between the last processed offset and the commited offset will be processed twice
 
@@ -393,6 +393,6 @@ kafka-console-consumer formatters:
    - key.deserializer
    - value.deserializer - use CLASSPATH env variable to add Java class to classpath
 
-
+`ProducerInterceptor` in Spring
 
 
