@@ -20,4 +20,4 @@ Error Handling - see doc for specific middleware or use ``@ServiceActivator`` ``
 
 Can have a global error handler by using ``@ServiceActivator("errorChannel")``
 
-
+DefaultMessageHandlerMethodFactory - see this for custom Message handling and Message conversion(HandlerMethodArgumentResolver, MessageConverter)
