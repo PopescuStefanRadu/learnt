@@ -1,0 +1,6 @@
+inxi -Fxz
+inxi -Fxz
+
+
+
+
