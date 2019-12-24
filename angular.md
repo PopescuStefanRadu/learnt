@@ -27,6 +27,8 @@ OnPush refers only to changes coming from parent component on input. Rest still 
 
 
 ngOnChanges receives changes on inputs as an object: changes.field1, changes.field2 etc.
+ngOnChanges is ran after to @Input() annotated properties
+
 
 
 DoCheck - check for changes that angular cannot detect automatically
@@ -58,15 +60,21 @@ secondary routers - use outlets
 
 Route guards:
 
- - CanActivate —Used to determine whether the route can be activated (such as
+ - CanActivate - Used to determine whether the route can be activated (such as
    user validation)
- - CanActivateChild —Same as CanActivate, but specifically for child routes
- - CanDeactivate —Used to determine whether the current route can be deactivated
+ - CanActivateChild - Same as CanActivate, but specifically for child routes
+ - CanDeactivate - Used to determine whether the current route can be deactivated
    \(such as preventing leaving an unsaved form without confirmation)
- - CanLoad —Used to determine whether the user can navigate to a lazy loaded
+ - CanLoad - Used to determine whether the user can navigate to a lazy loaded
    module prior to loading it
- - Resolve —Used to access route data and pass data to the component’s list of
+ - Resolve -  Used to access route data and pass data to the component’s list of
    providers
+
+
+
+
+
+
 
 
 
