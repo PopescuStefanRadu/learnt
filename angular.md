@@ -77,6 +77,7 @@ Creating libraries:
 
 Local dev solutions:
 
+ - monorepo
  - npm local
  - npm link
  - tsconfig pointing towards dist (`ng-packagr` used by libs compiles 
