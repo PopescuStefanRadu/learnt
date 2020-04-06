@@ -78,7 +78,7 @@ Creating libraries:
 Local dev solutions:
 
  - monorepo
- - npm local
+ - npm registry local
  - npm link
  - tsconfig pointing towards dist (`ng-packagr` used by libs compiles 
 differently from @angular-devkit/build-angular so always point to dist js files)
