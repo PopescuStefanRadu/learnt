@@ -43,7 +43,7 @@ see ViewContainerRef/ViewChild/ComponentFactoryResolver
 
 
 
-Injection:
+## Injection:
 
  - alias \(useExisting) - doesn't create new instance
  - Class \(useClass) - creates new instance
@@ -51,6 +51,10 @@ Injection:
  - Value \(inject value)
 
 multi-provider \(multi) - add extra instance but inject all of them
+
+`NgModule` import order counts, because the `Injectable`s get registered into the same `Injector`, so if there is a conflict for a `InjectionToken`, the latest is kept, while the previous is discarded. Effectively `map.put()`
+
+
 
 
 router - can nest router outlets using child routes
