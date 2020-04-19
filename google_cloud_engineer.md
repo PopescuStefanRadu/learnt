@@ -277,7 +277,99 @@ gcloud compute instances create "my-bm-2" \
 
 
 
+### Storage
+
+Aside from persistent Compute Engine VM storage there are other persistent storage solutions.
 
 
+#### Object Storage
+
+No file hierarchy, no chunk management. Get object by hash, accessible via HTTP. Does not require capacity management.
+
+Uses buckets, immutable. No edit, only delete/create. Buckets are namespaces. 
+
+Uses HTTPS and is encrypted at rest.
+
+Buckets:
+
+ - globally unique name
+ - storage class
+ - location: region | multi-region
+ - IAM policies | ACLs
+ - object versioning setting
+ - object lifecycle mgmt rules - delete objects older than x days, created before asd, keep latest 3 versions
+
+Bucket objects:
+
+ - files
+ - ACLs
+
+
+Storage classes:
+
+---              | Multi-regional | Regional | Nearline | Coldline
+---              | -------------- | -------- | -------- | --------
+Access           | Highly freq    | freq     | <1/month | <1/yr  
+Availability SLA | 99.95          | 99.9     | 99       | 99
+Use-case         | CDN            | In-region analytics, transcoding | 
+
+
+Storage price: multi-regional > coldline  per (gb * month)
+Retrieval price: multi-regional < coldline per gb of data read
+
+multi-regional = geo-redundant
+
+Storing: Online transfer via cli/ drag&drop. Storage transfer service (scheduled, managed batch transfers), Transfer Appliance (ship data physically)
+
+
+Other GCP services have access to Cloud Storage as an ingress point.
+
+
+#### Cloud Bigtable
+
+Can scale to thousands of columns and hold sparsely populated data. Similar to persistent hashtable. Can be looked up with a single key
+
+Same API as HBase
+
+IAM integration. Data encryption in-flight & at rest.
+
+Access patterns: Streaming(Spark storm etc.), Batch processing(Hadoop), Application API.
+
+
+#### Cloud SQL managed service
+
+CloudSQL can replicate data with auto failover. Has backups on-demand or scheduled. Can scale up (rw) and horizontally(r)
+Is accessible by other GCP services via standard drivers.
+
+
+#### Cloud spanner
+
+Transactions, consistency, managaed instances with HA. SQL queries (ANSI 2011 w/ extensions), automatic replication.
+
+Sharding style.
+
+
+#### Cloud datastore
+
+Sharding & replication & scalability automagically.
+
+Has transactions, unlike bigtable. Has SQL-like api. Uses structured data.
+
+Available across App engine (serverless crap) and Compute Engine
+
+
+#### Comparison
+
+Cloud datastore: structured data. Has transactions. No complex queries. TB+. 1MB/entity (unit size)
+
+Bigtable: wide column, single row transaction. no complex queries. PB+. 10MB/cell, 100MB/row. Query only by hashcode
+
+Cloud Storage: blob store. 
+
+Cloud SQL: Relational. Managed service on top of PostgreSQL / MySQL. OLTP
+
+Cloud Spanner: Relational. Transactions + complex queries. PB. 10.240MiB/row. OLTP
+
+BigQuery: Relational. Complex queries. No transactions. PB+. 10MB/row. Typical OLAP
 
 
