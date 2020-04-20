@@ -275,6 +275,17 @@ gcloud compute instances create "my-bm-2" \
 --subnet "default"
 ```
 
+```
+gsutil mb -l US gs://$DEVSHELL_PROJECT_ID
+
+gsutil cp gs://blahblah blahblah
+
+ls
+
+gsutil cp blahblah gs://$DEVSHELL_PROJECT_ID/blahblah
+```
+
+
 
 
 ### Storage
@@ -355,7 +366,7 @@ Sharding & replication & scalability automagically.
 
 Has transactions, unlike bigtable. Has SQL-like api. Uses structured data.
 
-Available across App engine (serverless crap) and Compute Engine
+Available across App engine (serverless crap??) and Compute Engine as well as the other platforms.
 
 
 #### Comparison
@@ -371,5 +382,77 @@ Cloud SQL: Relational. Managed service on top of PostgreSQL / MySQL. OLTP
 Cloud Spanner: Relational. Transactions + complex queries. PB. 10.240MiB/row. OLTP
 
 BigQuery: Relational. Complex queries. No transactions. PB+. 10MB/row. Typical OLAP
+
+
+### K8s engine
+
+IaaS - run system on hw. Access hw resources directly.
+
+PaaS - use services. Deploy code using services.
+
+You give up control of server architecture.
+
+Container is combo between both??? supposedly.
+
+Lose control over OS and HW for easier scalability.
+
+
+Cloud Build vs Docker.
+
+
+Google Anthos - on-prem + multi-cloud + hybrid cloud env
+
+
+GKE on-prme uses same MarketPlace, Stackdriver as Google K8s Engine
+
+Isio Service Mesh from On-Prem si synced via Cloud Interconnect with Anthos Service Mesh
+
+
+Policy Repository (located either on-prem or in the cloud) is a git repo from which both on-prem and cloud 
+Anthos Config Management instances take sync policies and sync the local k8s (cloud/on-prem)
+
+LoadBalancer is a service that maps a router from Compute Engine and infrastructure to a deployment(and others?).
+It is a physical router coupled with logical routing.
+
+
+### App Engine
+
+
+PaaS
+
+Standard env:
+
+ - free daily quota
+ - autoscale workloads
+ - usage based pricing
+
+SDK's for several langs
+
+Runtime provided by google: Java, Python, PHP & Go
+
+Code is sandboxed:
+
+ - No writing to local files
+ - Requests timeout at 60s
+ - Limits on 3rd party software
+ - instance startup in milliseconds
+ - network access is via App Engine services
+ - After free daily use pay per instance class with automatic shutdown
+
+Access to services: memcache, task queues, scheduled tasks, search, logs, etc.
+
+
+Flexible env:
+
+ - can specify container you run your code in
+ - can choose geographical region
+ - ssh access(not by default)
+ - instance startup in minutes
+ - can write to disk (ephemeral)
+ - has support for 3rd party binaries
+ - has network access
+ - pay for resource allocation per hour
+ - no automatic shutdown
+
 
 
