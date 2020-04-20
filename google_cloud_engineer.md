@@ -285,6 +285,20 @@ ls
 gsutil cp blahblah gs://$DEVSHELL_PROJECT_ID/blahblah
 ```
 
+```
+gcloud auth list
+
+
+gcloud config list project
+
+gcloud components install app-engine-python
+
+gcloud app create --project=$DEVSHELL_PROJECT_ID
+
+
+```
+
+
 
 
 
@@ -454,5 +468,10 @@ Flexible env:
  - pay for resource allocation per hour
  - no automatic shutdown
 
+Google Cloud Endpoints & Apigee Edge
 
+ - Auth0 (OIDC + OAuth2.0)
+ - supported over App Engine Flexible Environment, K8s engine, Compute Engine, with clients in Android, iOS, js???
+
+apigee - rate limiting on API's, analytics, monetization, etc. 
 

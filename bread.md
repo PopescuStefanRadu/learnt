@@ -1,5 +1,5 @@
 
-Apr 19
+### Apr 19
 
 500g faina alba
 340g apa
@@ -43,4 +43,16 @@ total
 
 Actions:
 take 282g from old
+
+Started baking on Apr 20 after ~12h of refrigeration
+
+
+
+### Focaccia attempt from sourdough discard
+
+785g sourdough.
+
+392.5 flour. 7.85g salt. 30g olive oil
+
+
 
