@@ -475,3 +475,17 @@ Google Cloud Endpoints & Apigee Edge
 
 apigee - rate limiting on API's, analytics, monetization, etc. 
 
+
+#### Others
+
+Google Cloud Sources
+
+
+Deployment Manager 
+
+ - uses .yaml or python to describe the environment 
+ - e.g. create a Compute Engine VM instance
+ - `gcloud deployment-manager` etc.
+ - 
+
+

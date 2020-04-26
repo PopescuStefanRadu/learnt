@@ -55,4 +55,25 @@ Started baking on Apr 20 after ~12h of refrigeration
 392.5 flour. 7.85g salt. 30g olive oil
 
 
+---
 
+### Whole grain bread
+
+Apr 22
+
+ - 1000g flour
+   - 200 whole grain
+   - 800 white
+ - 649g water
+ - 340g starter
+   - 170g starter flour
+     - 85g white
+     - 85g rye
+   - 170g starter water
+
+
+total flour 1170
+
+total water 819
+
+hydration: 0.7
