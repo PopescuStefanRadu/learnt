@@ -380,7 +380,7 @@ Sharding & replication & scalability automagically.
 
 Has transactions, unlike bigtable. Has SQL-like api. Uses structured data.
 
-Available across App engine (serverless crap??) and Compute Engine as well as the other platforms.
+Available across App engine and Compute Engine as well as the other platforms.
 
 
 #### Comparison
@@ -485,7 +485,169 @@ Deployment Manager
 
  - uses .yaml or python to describe the environment 
  - e.g. create a Compute Engine VM instance
- - `gcloud deployment-manager` etc.
- - 
+ - `gcloud deployment-manager` etc. 
+
+### Google Cloud BigData platform
+
+Serverless - you don't have to provision compute engine instances, services are fully mangaged, pay as you use
+
+#### Cloud dataproc
+
+Managed Hadoop, MapReduce, Spark, Pig, Hive
+
+Can scale up/down on the run
+
+Save money with preemptible compute engine instances(~80% cheaper)
+
+1 minute billing intervals
+
+#### Cloud dataflow
+
+Stream + Batch processing
+
+Automated scaling, no instance provision required
+
+ETL, batch & streaming.
+
+Integrated with GCP services (Cloud Storage, Pub/Sub, BigQuery, BigTable)
+
+Open source Java & Python sdk.
+
+#### BigQuery
+
+Ad-hoc SQL(2011) query on petabyte of data. Pay as you go.
+
+Has free monthly quotas for smaller orgs.
+
+Can specify the region in which you store your dataset, you don't need to setup a cluster there.
+
+Storage and queries are paid separately. Queries only when they are running. 
+
+Can share datasets, query cost is paid by project that queries, not owner of data.
+
+After 90 days of storage Google drops storage price.
+
+
+#### Cloud Pub/Sub
+
+At least once.
+
+#### Cloud Datalab
+
+Jupyter notebook. Google Charts and matplotlibi. Pay for used resources.
+
+
+### ML Cloud Machine learning platform
+
+TensorFlow + Tensor Processing Units (TPU) = love
+
+Structured vs unstructured data.
+
+
+#### Cloud vision API
+
+Extract text, Detect inappropriate content, analyze sentiment, gain insight from imgs, etc.
+
+
+#### Cloud Natural Language API
+
+80 langs, STT. Entity recognition - identify events, people, products, etc.
+
+#### Cloud Translate API
+
+#### Cloud Video Intelligence
+
+Annotate contents, detect scene changes, flag inappropriate content.
+
+### Review
+
+Compute engine - General computing workloads, IaaS
+
+K8s engine - Container based workloads, Hybrid
+
+App Engine Flex - Web and mobile applications, container based workloads
+
+App Engine Standard - Web & mobile apps
+
+Cloud functions - Ephemeral functions
+
+
+# Essential Google Cloud Infrastructure: Foundation
+
+
+Cloud Shell = temporary VM with 5GB of persistent storage
+
+
+can add variables to env by adding them to `.profile`: e.g. `source configs/myconfigs` at the end of `.profile`
+
+
+### VPC network types
+
+
+#### Default
+
+Every project has it. One subnet per region. Default firewall rules
+
+#### Auto Mode
+
+Default network is auto-mode. One subnet per region. Regional IP allocation. Fixed /20 subnet per region, expandable to /16
+
+#### Custom mode
+
+Auto-mode can be transformed to custom, but not vice-versa. Full control over IP ranges, Regional IP allocation, no default subnets created.
+
+--- 
+
+Networks are global.
+
+Cross network traffic can be done via internet, but hits google's edge routers, so it doesn't leave google necessarily.
+
+Subnetworks are at a regional scale only.
+
+
+New subnets cannot overlap with other subnets. (duh)
+
+Can expand but not shrink.
+
+Avoid large subnets. Overly large networks can cause collisions when peering etc.
+
+
+2 IP's:
+
+Internal: 
+
+ - allocated from subnet range to VMs by DHCP. 
+ - DHCP lease renewed every 24h. 
+ - VM name + IP is registered with network-scoped DNS
+
+External:
+
+ - assigned from poop (ephemeral)
+ - reserved (static) and billed more when not attached to a running VM
+
+
+External IP's are mapped to the internal IP's via VPC.
+
+Each instance has a hostname, same as instance name, that can be resolved to the internal ip address.
+
+FQDN is [hostname].[zone].c.[project-id].internal
+
+Name resolution done by internal DNS resolver:
+
+ - provided as part of Compute Engine (169.254.169.254)
+ - configured with DHCP (delete -> recreate => new internal IP address)
+ - has a LUT that matches internal IP addresses with external IP addresses.
+
+
+Instances with external IP addresses can allow connections from hosts outside the project. Users can connect directly via IP address.
+Admins can publish DNS records pointing to the instance. Public DNS records are not published automatically.
+
+
+DNS records for external addresses can be published using other DNS servers or Cloud DNS.
+
+Cloud dns - G100% SLA. Manage via UI, cli, API.
+
+Alias IP ranges: VM has an IP, container in VM has another, sth along these lines TODO
+
 
 
