@@ -299,12 +299,25 @@ gcloud app create --project=$DEVSHELL_PROJECT_ID
 ```
 
 
+```
+gcloud config set project blahblahproj
+
+
+cloud auth activate-service-account --key-file qwiklabs-gcp-01-84ad96426c8f-7c99ff54c494.json
+```
+
+Gsutil doc stuff https://cloud.google.com/storage/docs/boto-gsutil
+
 
 
 
 ### Storage
 
+
 Aside from persistent Compute Engine VM storage there are other persistent storage solutions.
+
+To use storage from buckets from 2 diff buckets create a service account. You will use that service account via a key
+
 
 
 #### Object Storage
@@ -366,6 +379,7 @@ Access patterns: Streaming(Spark storm etc.), Batch processing(Hadoop), Applicat
 CloudSQL can replicate data with auto failover. Has backups on-demand or scheduled. Can scale up (rw) and horizontally(r)
 Is accessible by other GCP services via standard drivers.
 
+Use cloud-sql proxy.
 
 #### Cloud spanner
 
@@ -648,6 +662,172 @@ DNS records for external addresses can be published using other DNS servers or C
 Cloud dns - G100% SLA. Manage via UI, cli, API.
 
 Alias IP ranges: VM has an IP, container in VM has another, sth along these lines TODO
+
+
+Auto-mode network not recomended for production
+
+
+network > VPC networks. Notice the default network with its subnets. Each subnet is associated with a Google Cloud region and a private RFC 1918 CIDR block for its internal IP addresses range and a gateway.
+
+
+Every VPC network has two implied firewall rules that block all incoming connections and allow all outgoing connections.
+
+
+You can ping mynet-eu-vm by its name because VPC networks have an internal DNS service that allows you to address instances by their DNS names instead of their internal IP addresses. This is very useful because the internal IP address can change when you delete and re-create an instance.
+
+
+```
+gcloud compute --project=qwiklabs-gcp-02-5b4396219b7f networks create managementnet --subnet-mode=custom
+
+gcloud compute --project=qwiklabs-gcp-02-5b4396219b7f networks subnets create managementsubnet-us --network=managementnet --region=us-central1 --range=10.130.0.0/20
+```
+
+private google access = access google api's and services. VM-s with external IP always have access.
+VM-s with internal IP only and private google access off have no access to google api's and services
+
+
+can use IAP (Identity Aware Proxy) to access a VM that has a internal IP only and no Private Google Access
+
+ IAP's TCP forwarding feature isn't intended for bulk transfer of data. IAP reserves the right to rate-limit users abusing this service.
+
+Compute:
+
+1 vCPU = 1 hardware hyper-thread
+
+Network throughput scales up to 2Gbps per vCPU
+
+CE can live-migrate to another host (pretty cool)
+
+When a VM is stopped you only get charged for attached persistent disks and IPs.
+
+Boot disk can be kept and reattached even when performing major changes like changing the CPU architecture.
+
+
+Can have sole tenant node.
+
+Shielded VM: vTPM, Secure Boot, Integrity monitoring
+
+There are RAM disks, (ofc they not bootable)
+
+Disk IO competes with net IO, because they use same physical network.
+
+
+Cloud Bigtable is used for search, maps & gmail.
+
+
+
+
+
+### Stackdriver 
+
+### Cloud VPN
+
+MTU = 1460 bytes = Maximum transmission unit
+
+todo Border Gateway Protocol (BGP)
+
+Provides access to internal IP addresses
+
+### Cloud Interconnect & Peering
+
+Direct Peering - Layer 3 Network, dedicated
+
+Carrier Peering - Layer 3 Network, shared
+
+Dedicated Interconnect - Layer 2 Data link, dedicated
+
+Partner Interconnect - Layer 2 Data link, shared
+
+Layer 2 - provides access to internal IP addresses across both networks
+
+Layer 3 - provides access to Google services using public IP addresses (G Suite, Cloud API, etc)
+
+### Shared VPC, VPC network peering
+
+Shared VPC - connect multiple networks in a shared network. Applications can communicate with each other
+via internal IP's in the shared network. One project is primary, the other projects are service projects. Centralized administration
+
+VPC Peering - connect 2 networks via tunnels. Networks can use each other's internal IPs. Can be across organizations. Decentralized administration.
+
+
+### Managed Instance Groups (compute)
+
+Deploy identical instances based on instance template.
+
+Rolling update.
+
+Instance group can be resized.
+
+Manager ensures all instances are running.
+
+Typically used with autoscaler.
+
+Can be in single zone or regional. (Actually accross regions via multiple instance groups)
+
+Autoscaling policy:
+
+ - CPU utilization
+ - Load balancing capacity
+ - monitoring metrics
+ - queue based workload (Pub/Sub)
+
+### HTTP(S) Load Balancing
+
+HTTPS load balancer supports QUIC protocol.
+
+apache bench - nice tool to stress test
+
+ARMOR protocol - deny addresses and such 
+
+update-rc.d - set service to start on boot
+
+Backend config: utilization = CPU utilization, rate = requests per second(RPS)
+
+
+### Load balancing
+
+#### SSL load balancer
+
+Terminates SSL session at load balancing layer. IPv4 & IPv6
+
+Benefits:
+
+ - intelligent routing
+ - certificate management
+ - security patching
+ - ssl policies
+
+#### TCP load balancer
+
+TCP load balancing - terminates TCP sessions at load balancing layer. Traffic towards backends can use SSL or TCP.
+
+#### Network load balancer
+
+Uses forwarding rules (IP protocol data)
+
+Can load balance:
+
+ - UDP traffic
+ - TCP/SSL on ports that are not supported by TCP/SSL load balancers
+
+Backends can be: 
+
+ - instance group
+ - target pool
+  - a group of instances that receive incoming traffic from forwarding rules
+  - up to 50 per project
+  - single health check
+  - instances must be in the same region
+
+
+#### Internal load balancing
+
+Regional, private load balancing. (Good for scaling services for example, backend/service/app in 3-tier)
+
+Internal IP address configured as load balancer.
+
+Instead of client connecting to load balancer and load balancer to backend,
+the client connects session-style directly to the backend. (via Andromeda)
 
 
 

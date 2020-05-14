@@ -77,3 +77,21 @@ total flour 1170
 total water 819
 
 hydration: 0.7
+
+
+### Whole grain bread 2
+
+ - 900g flour
+  - 560 whole grain
+  - 240 white flour
+  - 100 from levain
+ - 675g water
+  - 100 from levain
+  - 575
+
+75% target hydration
+
+14:00 feed starter 40g starter + 160g water + 160g flour (1:1 rye, white)
+
+17:00 make dough
+
