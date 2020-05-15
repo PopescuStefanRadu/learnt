@@ -903,3 +903,23 @@ gcloud deployment-manager deployments update dminfra
 
 
 GCP Marketplace - 3rd party stuff created with Deployment Manager
+
+
+# GKE
+
+```
+gcloud container clusters list
+
+
+gcloud container clusters get-credentials shop-cluster --zone us-west1-b
+
+
+kubectl get nodes
+```
+
+
+ service level indicators (SLIs), objectives (SLOs) and agreements (SLAs)
+
+
+
+
