@@ -95,3 +95,16 @@ hydration: 0.7
 
 17:00 make dough
 
+
+### Whole grain bread 3
+
+ - 700 flour
+  - 500 whole grain
+  - 300 white
+ - 210 levain (105 water)
+ - 500 water
+
+total flour 805, total water 605 ~75% hydration
+
+
+
