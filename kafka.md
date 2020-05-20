@@ -393,6 +393,9 @@ kafka-console-consumer formatters:
    - key.deserializer
    - value.deserializer - use CLASSPATH env variable to add Java class to classpath
 
-`ProducerInterceptor` in Spring
+`ProducerInterceptor` in Kafka
+
+
+
 
 
