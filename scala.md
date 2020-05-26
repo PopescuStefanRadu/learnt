@@ -6,5 +6,7 @@ referential transparence
 
 
 
+https://www.scala-exercises.org/
+
 
 
