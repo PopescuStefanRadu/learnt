@@ -1,0 +1,162 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\simpleResumeItem}[1]{
+  \item\small{
+  #1
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large PURUPURUNAME} & Email : \href{mailto:PURUPURUMAIL}{PURUPURUMAIL}\\
+  Mobile: PURUPURUPHONE \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Profile}
+      I'm a highly motivated developer like to be creative and take responsibility. Being a fast learner and a genuinely friendly person means that I can easily adapt to a variety of projects and requirements. I take pleasure in thoroughly understanding technologies in order to come up with informed solutions and maintainable implementations. My top skills include Kafka, Java, Spring Framework, Spark.
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {eSolutions}{}
+      {Software Developer}{Aug 2018}
+      \resumeItemListStart
+        \resumeItem{Big Data}{
+          I was responsible for designing and implementing common big data requirements: acquisition(via NiFi \& MiNiFi), storage in various databases(Cassandra, HDFS, Solr, Redis, RDBMS), processing(Kafka with: streams, low level api consumer and producer, using Spring Cloud Stream), enrichment(Kafka, Spark on Scala), as well as application development such as adding customized continuous delivery and end-user configurability to our data collection service, building a reliable Avro schema registry backed by Apache Zookeeper and adding features to an authentication and authorization API gateway.
+          
+          Monitored and debugged applications and data flows using ELK and Grafana.
+          
+          After learning, researching and developing in my free time, I successfully advocated and delivered stream processing using Apache Kafka for significant code quality and performance improvements as a replacement to Spark batch processing.}
+        \resumeItem{Web development}
+          {Developed both front-end on Angular 7+ and backend on Spring Boot for multiple microservices used by a major retail chain. Developed complex queries using the JPA Criteria Api. Innovated by creating a library that simplifies table filtering. Mentored junior and intern colleagues. Worked and introduced new team members to an internal project that uses event sourcing and command query responsibility segregation. Independently developed small projects: a template based email sender, various PoCs and MVPs, technology demo apps}
+       \simpleResumeItem{}{
+       All projects used Java 8+, Kafka, AGILE methodology, testing done using Spock framework and either testcontainers or docker containers set up in bamboo.
+       }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Soft Vision Media}{}
+      {Java Developer}{Jul 2017 - Mar 2019}
+      \resumeItemListStart
+        \simpleResumeItem{
+          Wrote data transformation code using XSLT and CSV parsers in order to integrate the company's product with various EDI providers. Built simple API integrations with various services}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Eau de Web}{}
+      {Full-Stack Drupal Developer Internship}{July 2016 - September 2016}
+      \resumeItemListStart
+        \simpleResumeItem{
+          Built and integrated an IMAP module. Helped build the permission system for a custom collaborative business process flow. Integrated code with external APIs. Configured and customized simple websites. Maintained existing applications through tasks such as creating imports, exports, cleaning data, fixing bugs.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Android Task Manager}
+      {As part of a college project, using Dagger 2}
+    \resumeSubItem{Web scraper}
+      {Written using Java and JSoup with storage backed by mysql as part of a larger collaborative filtering and data analysis goal}
+    \resumeSubItem{Wordpress instance}
+      {Customized and deployed a Wordpress blog on my personal bare-metal machine including bind9 installation and configuration}
+    \resumeSubItem{Blog}
+      {Self-learned programming by writing a no-framework MVC architecture blog using php. Ported it to Symphony 2 later on.}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Programming Languages}{: Java, Typescript, Scala, Groovy, SQL, Javascript}
+    }
+    \item{
+      \textbf{Relevant technologies}{: Kafka, Spring Framework, Spark, Angular, Hadoop, Cassandra}
+    }
+    \item{
+    \textbf{Languages}{: English - C1, German - beginner, French - beginner}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
+

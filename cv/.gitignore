@@ -1,0 +1,5 @@
+*.aux
+*.log
+build.sh
+*.pdf
+*.out
