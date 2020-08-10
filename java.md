@@ -151,7 +151,7 @@ If the method's argument type is not changed by type erasure, then the method ca
 
 ### Wildcard
 
-Each wildcard is refers to a different "any" type.
+Each wildcard refers to a different "any" type.
 
 todo
 
@@ -243,6 +243,22 @@ it's simply a compile time helping hand. It gets type erased.
  - `instanceof` expressions (except unbounded wildcard)
  - as supertypes
  - in a class literal (?.class, kind of stuff)
+
+
+### Type parameters
+
+ - array types are not permitted as bounds `T extends Object[] // err`
+ - primitive types not permitted as bounds
+
+Cannot use different instantiations of same generic type as bounds of a type param:
+
+```
+class Foo<T extends Comparable<T> & Comparable<String>> // error
+```
+
+
+ 
+
 
 
 

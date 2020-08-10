@@ -1,6 +1,5 @@
 Available and partition tolerant
 
-
 Store together what you query together
 
 Make partitions as even as possible
@@ -20,7 +19,7 @@ timeuuid type
 
 Keyspace is a group of tables sharing some common features todo 
 
-
+Avoid client-side joins
 
 
 commands:
@@ -404,5 +403,9 @@ Vertical partitioning - splitting table into multiple tables.
 
 ### Various
 
+https://docs.datastax.com/en/dsbulk/doc/index.html  recently Open sourcedi
 
-https://docs.datastax.com/en/dsbulk/doc/index.html  recently Open sourced
+
+
+
+
