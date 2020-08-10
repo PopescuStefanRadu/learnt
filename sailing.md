@@ -48,4 +48,154 @@ to the other which is lift.
 Telltale - fumuri
 
 
+Copied from some site:
+
+
+
+Mast – Catarg
+
+Mainsail – Randă – vela mare
+
+Jib/Headsail – Foc, Genovez – velă de la prova; are diferite denumiri 
+pentru că există diverse modele, fiecare cu întrebuințarea lui.
+
+Helm – Cârmă, Timonă.
+
+Helmsman – Timonier.
+
+Beam, abeam – Travers, Din travers – adică perpendicular pe unul dintre 
+borduri (babord sau tribord)
+
+Boom – Ghiu – brațul de lemn sau metal care susține partea de jos a 
+velei randă.
+
+Rigging – Greement – totalitatea catargelor, velelor și parâmelor de la 
+bordul unui velier.
+
+Tell Tails – Fumuri – panglici textile prinse pe vele, care indică dacă 
+vela este corect ajustată pentru direcția vântului.
+
+Draft/Draught – Pescaj – distanța de la linia de plutire până la fundul 
+bărcii.
+
+Winch – Vinci, cabestan, troliu.
+
+Sheet – Școtă – Manevră/parâmă prin care se controlează o velă.
+
+Hatch – Chepeng
+
+Backstay – Strai pupa – Parâmă pupa care susține catargul (și pe care se 
+ridică vela pupa).
+
+Forestay – Strai prora – Parâmă prora care susține catargul.
+
+Halyard – Fungă – Parâmă cu care se ridică vela.
+
+Clew – Colț de școtă – colțul din spate/pupa al velei.
+
+Tack – Colț de mură – colțul din față/prova al velei.
+
+Kicker – Palanc – un dispozitiv care ridică sau coboară ghiul.
+
+Battens – Balene – vergele care dau velei forma curbată, de aripă de avion.
+
+Hull – Cocă
+
+Keel – Chilă – element de rezistență amplasat de-a lungul fundului navei.
+
+Center Board – Derivor – o placă ce coboară din chilă și previne deriva.
+
+Forecastle – teugă
+
+Traveler – Pisică – Un scripete pe șină care permite deplasarea transversală 
+a ghiului.
+
+Tiller – Eche – bară fixată pe axul cârmei, utilizată pentru manevrarea 
+ambarcațiunii; un fel de timonă.
+
+Cleat – Tachet – suport în jurul căreia se înfășoară diverse parâme, pentru 
+fixare.
+
+Blocker – Nucetă/Scripete/Troliu
+
+Windlass – Vinci de ancoră – scripetele cu care se ridică și coboară ancora.
+
+Lifelines – Linia Vieții – sârme fixate de-a lungul bordurilor pentru a preveni
+căderea în apă a pasagerilor.
+
+Toe Rail – Copastie – mică bordură de-a lungul marginii punții utilizată pentru 
+sprijin.
+
+Bowsprit – Bompres – catargul din vârful provei.
+
+Companionway – Salon – “sufrageria” din cabina navei.
+
+Galley – Cambuză. Bucătăria unei nave.
+
+Monohull – Navă cu o singură cocă.
+
+Multihull – Navă cu două sau mai multe coci (ex: catamaranul).
+
+Dinghy – 1. ambarcațiune cu motor, de mici dimensiuni, cu care se face de regulă 
+transferul de pe mal la velier. 2. velier de mici dimensiuni, cu o singură velă.
+
+
+
+Tack – Voltă (în vânt) – schimbarea bordului din care bate vântul printr-o 
+manevră cu vântul în față.
+
+Gybe – Ampanare – schimbarea bordului din care bate vântul printr-o manevră 
+cu vântul în spate.
+
+To Luff up – A veni în vânt – a cârmi în direcția din care bate vântul.
+
+To Bear Away – A veni sub vânt – a cârmi în direcția în care bate vântul.
+
+Close Hauled – Vânt strâns  – cel mai mic unghi în care un velier se poate 
+deplasa în vânt, în jur de 45 de grade.
+
+Close Reach – Vânt de dinaintea traversului – un close hauled mai larg, 
+oriunde între 45 și 90 de grade.
+
+Beam Reach – Vânt travers – navigație cu vântul bătând perpendicular pe unul 
+dintre bordurile velierului, la 90 de grade față de direcția de deplasare.
+
+Broad Reach – Vânt de dinapoia traversului – navigație cu vântul bătând lateral 
+și din spate (91-150 grade față de direcția de deplasare).
+
+Run – Vânt de mare larg – navigație cu vântul bătând din spate la 150-180 de 
+grade față de direcția de deplasare.
+
+Berth – Dană – cheu pentru acostarea navelor.
+
+To Heel – A banda – atunci când ambarcațiunea se înclină lateral pe unul 
+dintre borduri.
+
+Bearing – Revelment – Direcția de busolă la care se află un reper sau 
+direcția de deplasare a bărcii.
+
+Squall – Gren – furtună intensă și de scurtă durată.
+
+Leeway – Derivă – deviație de la curs cauzată de vânt, curenți sau maree.
+
+Tide – Maree – mișcarea de creștere și descreștere a apei mării în decursul 
+unei zile.
+
+Flood – Flux – perioada din zi când apa mării crește.
+
+Ebb – Reflux – perioada din zi când apa mării descrește.
+
+High Water, Low Water – Apă înaltă, apă joasă – punctele de maxim și minim ale 
+mareei.
+
+Spring tide – Maree Vie (sau de sizigii) – perioadă de maree maximă, cauzată de 
+atracția conjugată a Lunii și Soarelui; are loc în preajma Lunii Pline și a 
+Lunii Noi.
+
+Neap tide – Maree Moartă (sau de cuadratură) – perioada de maree minimă; are 
+loc în preajma primului și ultimului Pătrar.
+
+
+TODO - unify with rest? categorise
+
 
