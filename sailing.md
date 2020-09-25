@@ -12,26 +12,53 @@ Exit (leech) shape - hooked or flat or open
 Position of max draft is comupted by projecting max draft point onto chord 
 and divding the length between this point and luff by chord length. - todo fix phrasing
 
+Increasing camber increases both lift and drag - because it moves the air more.
+
+
+In light air, too much camber causes flow separation
+
+Flatter sails aid pointing
+
+
+Light air - reduce camber to maintain attached flow
+
+Underpowered or slow - increase camber for more lift
+
+Overpowered - reduce camber to minimize drag, go upwind
+
+Waves - you need more power to maintain boat speed so increase camber
+
+
+## Upwind jib trim
 
 
 
 
 
+## Tacking
 
-
+Stop turning when the sail is filled with air to not underturn or overturn
 
 ### Terms
 
 
 Aft - situated towards stern, sternwards
 
-Bow, Starboard, Stern, Port - clockwise starting from 12:00
+Bow, Starboard, Stern, Port - prova, tribord, pupa, babord - clockwise starting 
+from 12:00
 
-Tacking - volta
+Camber - distance from the chord line of the sail to the point of maximum depth
+
+Percent camber - camber/chord length as percentage
 
 Gybing - ampanare
 
+Halyard or halliard - funga - rope used to hoist a sail or yard or something
+
 Ladder rung - lines perpendicular from start to target
+
+Luffing sail - flutura - sail is luffing when it is paralel with the wind,
+it can first be observed on the luff
 
 Windward and leeward are opposite
 
@@ -44,13 +71,28 @@ the resulting movement can be decomposed in 2 parts. One that moves
 the object along the wind which is drag. One which moves it perpendicular 
 to the other which is lift.
 
+Reefing sail - schimbi inaltimea velei, la genovez rolluiesti, la 
+mainsail folosesti ochiul al 2-lea. poti face in timpul mersului
+daca ai paramele pregatite
+
+Winch handle - manerul pt cabestan
 
 Telltale - fumuri
 
+Keelboat - boat that is larger than smallboats and has a keel
 
-Copied from some site:
+Keel - chila - weight (below hull) 
+
+boom - ghiu
+
+boom vang - kicking strap (UK) - pulls the boom and the mast aft
+
+angle of attack - the angle between the wing/sail and the wind
 
 
+
+
+#### Copied from some site:
 
 Mast – Catarg
 
@@ -59,7 +101,18 @@ Mainsail – Randă – vela mare
 Jib/Headsail – Foc, Genovez – velă de la prova; are diferite denumiri 
 pentru că există diverse modele, fiecare cu întrebuințarea lui.
 
-Helm – Cârmă, Timonă.
+Jib sheet traveller - pisica - changes the shape of the sail
+
+Spreader arm - horizontal metal part on the mast?
+
+Sail edges:
+
+ - head - upper part
+ - luff - part that is attached to the mast, closest windwards
+ - foot - bottom edge
+ - leech - to the aft
+
+helm – Cârmă, Timonă.
 
 Helmsman – Timonier.
 
@@ -139,14 +192,6 @@ Multihull – Navă cu două sau mai multe coci (ex: catamaranul).
 Dinghy – 1. ambarcațiune cu motor, de mici dimensiuni, cu care se face de regulă 
 transferul de pe mal la velier. 2. velier de mici dimensiuni, cu o singură velă.
 
-
-
-Tack – Voltă (în vânt) – schimbarea bordului din care bate vântul printr-o 
-manevră cu vântul în față.
-
-Gybe – Ampanare – schimbarea bordului din care bate vântul printr-o manevră 
-cu vântul în spate.
-
 To Luff up – A veni în vânt – a cârmi în direcția din care bate vântul.
 
 To Bear Away – A veni sub vânt – a cârmi în direcția în care bate vântul.
@@ -197,5 +242,8 @@ loc în preajma primului și ultimului Pătrar.
 
 
 TODO - unify with rest? categorise
+
+
+
 
 
