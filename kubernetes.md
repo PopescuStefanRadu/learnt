@@ -1,14 +1,18 @@
+kind - best
+kubectl - main base tool
+kubectx - uses kubectl
+kubens - uses kubectl
+k9s - uses kubectl
+
+echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
 
 
+helm install incubator/sparkoperator --namespace demo --generate-name
 
-minikube start --vm-driver \ vm cu limita de memorie
-vs
-k3s
 
-kubectl-import
-kubectl
-kubectx
-kubens
+kubectl create serviceaccount spark -n demo
 
-k9s
 
+kubectl create clusterrolebinding spark-role --clusterrole=edit --serviceaccount=demo:spark --namespace=demo 
+
+https://github.com/GoogleCloudPlatform/spark-on-k8s-operator
