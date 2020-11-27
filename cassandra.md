@@ -1,4 +1,5 @@
-Available and partition tolerant
+Available and partition tolerant by default. Can, per query, be 
+consistent + partition tolerant
 
 Store together what you query together
 
@@ -12,6 +13,7 @@ Limitations per partition:
 
  - Up to ~100k rows
  - Up to ~100MB
+ - single cell not bigger than ~10MB
 
 timeuuid type
 
@@ -48,12 +50,19 @@ nodetool drain #flush data
 
 ### Replication:
 
-Strategy:
+Strategy: per keyspace;
 
+
+
+can be changed via `ALTER KEYSPACE`
 
 caas-dc = replication factor (RF)
 
 local quorum (in my datacenter)
+
+Immediate consistency: 
+
+`Consistency level read + consistency level write > replication factor`
 
 ### Write path:
 
@@ -82,7 +91,6 @@ to update things to latest version. read\_repair\_chance is default 10%
 Assuming read consistency ALL. Coordinator gets data from 1, checksum from 2. Compares checksums,
 returns.
 
-
 Each cell has a timestamp (todo check). If checksums are different coordinator takes the one
 with the most fresh timestamp and sends them to the out of date nodes.
 
@@ -96,7 +104,8 @@ There is also a partition summary which indexes the partition index and resides 
 
 There is also a bloom filter, which may sometimes know that a key does not reside in the node.
 
-There is also a key cache, in case the user asks for the same key, the key cache keeps the SSTable offsetdirectly.
+There is also a key cache (in memory), in case the user asks for the same key, the key 
+cache keeps the SSTable offset directly.
 
 
 ### Comapction strategy
@@ -338,7 +347,6 @@ Batches guarantee that all instructions are written and eventually persisted.
 
 Acid transaction (one write at a time though)
 
-
 ### Secondary indexes
 
 An index that allows a table to be queried on a column that is usually prohibited:
@@ -406,6 +414,41 @@ Vertical partitioning - splitting table into multiple tables.
 https://docs.datastax.com/en/dsbulk/doc/index.html  recently Open sourcedi
 
 
+
+
+## Client code
+
+Driver is node aware and can send/request data to nodes directly.
+
+## CQLSH
+
+
+```
+describe keyspaces;
+
+describe keyspace test;
+
+use test;
+
+describe keyspace;
+
+use system;
+
+EXPAND ON; -- OFF
+
+create keyspace test2 WITH replication = {'class':'NetworkTopologyStrategy', 'replication_factor': 3};
+
+create keyspace test2 WITH replication = {'class':'NetworkTopologyStrategy', 'DC': 3, 'RO': 2};
+-- Note that when ALTER ing keyspaces and supplying replication_factor, 
+-- auto-expansion will only add new datacenters for safety, it will not alter existing 
+-- datacenters or remove any even if they are no longer in the cluster. If you want 
+-- to remove datacenters while still supplying replication_factor, explicitly zero 
+-- out the datacenter you want to have zero replicas.
+
+
+create keyspace test2 WITH replication = {'class':'SimpleStrategy', 'replication_factor': 3};
+
+```
 
 
 
