@@ -450,5 +450,12 @@ create keyspace test2 WITH replication = {'class':'SimpleStrategy', 'replication
 
 ```
 
+## Questions
+
+If i want to update with same UUID/TimeUUID is it necessary to have a full write/read cycle
+with C*?
+
+
+
 
 
