@@ -88,39 +88,44 @@ to update things to latest version. read\_repair\_chance is default 10%
 ### Read path
 
 
-Assuming read consistency ALL. Coordinator gets data from 1, checksum from 2. Compares checksums,
-returns.
+Assuming read consistency ALL. Coordinator gets data from 1, checksum from 2. 
+Compares checksums, returns.
 
-Each cell has a timestamp (todo check). If checksums are different coordinator takes the one
-with the most fresh timestamp and sends them to the out of date nodes.
+Each cell has a timestamp (todo check). If checksums are different coordinator 
+takes the one with the most fresh timestamp and sends them to the out of date nodes.
 
-dclocal\_read\_repair\_chance = 0.1 - check all nodes on read and repair if necessary. Limited to datacenter
+dclocal\_read\_repair\_chance = 0.1 - check all nodes on read and repair if 
+necessary. Limited to datacenter
 
 read\_repair\_chance = 0 - read repair across all datacenters
 
 
-In an SSTable there is data for multiple partitions. An index keeps the file offsets for each partition.
-There is also a partition summary which indexes the partition index and resides in RAM.
+In an SSTable there is data for multiple partitions. An index keeps the file 
+offsets for each partition.
 
-There is also a bloom filter, which may sometimes know that a key does not reside in the node.
+There is also a partition summary which indexes the partition index and resides 
+in RAM.
 
-There is also a key cache (in memory), in case the user asks for the same key, the key 
-cache keeps the SSTable offset directly.
+There is also a bloom filter, which may sometimes know that a key does not 
+reside in the node.
+
+There is also a key cache (in memory), in case the user asks for the same key, 
+the key cache keeps the SSTable offset directly.
 
 
 ### Comapction strategy
 
 
-SizeTiered Compaction - (default) triggers when multiple SSTables of a similar size are present,
-great if ingesting a lot of data / write heavy workload
+SizeTiered Compaction - (default) triggers when multiple SSTables of a similar 
+size are present, great if ingesting a lot of data / write heavy workload
 
-Leveled Compaction - groups SSTables into levels, each of which has a fixed size limi which is 10 times larger than the previous level
+Leveled Compaction - groups SSTables into levels, each of which has a fixed 
+size limit which is 10 times larger than the previous level
 
-
-TimeWindow Compaction - creates time windowed buckets of SSTables that are compacted with each other using the Size Tiered Compaction Strategy.
+TimeWindow Compaction - creates time windowed buckets of SSTables that are 
+compacted with each other using the Size Tiered Compaction Strategy.
 
 Use the ALTER TABLE command to change the strategy.
-
 
 Tombstones that are older than gc\_grace\_seconds do not get deleted.
 
@@ -150,13 +155,13 @@ nodetool status
 2-4 TB per node
 
 
-
 ### VNodes todo
 
 number of vnodes: num\_tokens in cassandra.yaml
 
 
-makes add/remove nodes better, especially add if one overloaded node has to stream a lot of data to a new node
+makes add/remove nodes better, especially add if one overloaded node has to 
+stream a lot of data to a new node
 
 
 default num of vnodes: 128
@@ -165,11 +170,9 @@ default num of vnodes: 128
 When using vnodes Cassandra automatically assigns the token ranges for you.
 
 
-
 ### Gossip
 
 Seed nodes
-
 
 Only spreads node metadata:
 
@@ -187,7 +190,8 @@ Only spreads node metadata:
 
 SYN msg: endpoint:generation:version list - says all it knows
 
-ACK msg: enpoint:generation:version list - returns all it knows including outdated stuff
+ACK msg: enpoint:generation:version list - returns all it knows including outdated 
+stuff
 
 ACK2 - sends data for outdated stuff
 
@@ -195,37 +199,32 @@ ACK2 - sends data for outdated stuff
 
 Which rack belongs where. Communicate hash ranges?
 
-
-
 Types of snitches:
 
+PropertyFileSnitch from cassandra-topology.properties - manually maintained for 
+all nodes
 
-PropertyFileSnitch from cassandra-topology.properties - manually maintained for all nodes
-
-GossipingPropertyFileSnitch - Configure each node to its datacenter and rack and then gossip spreads the info. Configure `dc` and `rack` in cassandra-rackdc.properties file
-
+GossipingPropertyFileSnitch - Configure each node to its datacenter and rack 
+and then gossip spreads the info. Configure `dc` and `rack` in 
+cassandra-rackdc.properties file
 
 RackInferringSnitch - infers from ip addr. sth.datacenter.rackoctet.nodeoctet
 
-
 There are also cloud based snitches.
-
 
 Also dynamic snitch based on performance.
 
+When changing snitches run repair & cleanup on all nodes. Entire cluster must 
+use same snitch.
 
-
-When changing snitches run repair & cleanup on all nodes. Entire cluster must use same snitch.
-
-
-REplication factor 0 means only memtable probably, works in a multi-datacenter setup
+TODO
+Replication factor 0 means only memtable probably, works in a multi-datacenter setup
 
 
 ### Hinted handoff
 
-Coordinator node keeps that that could not reach a downed node until it is up again and streamed
-successfully.
-
+Coordinator node keeps that that could not reach a downed node until it is up 
+again and streamed successfully.
 
 in cassandra.yaml
 
@@ -261,7 +260,8 @@ Partitions:
 
 
 
-Collections cannot contain other collections unless they are FROZEN (i.e. serialized as a blob)
+Collections cannot contain other collections unless they are FROZEN 
+(i.e. serialized as a blob)
 
 
 #### Counters
@@ -286,11 +286,13 @@ Counter columns cannot be indexed or deleted.
  - can be used in SELECT, INSERT & UPDATE statemtents
  - only available in the keyspace they are defined
  - required setup:
-   - cassandra.yaml: `enable_user_defined_functions` to `true` (`enable_scripted_user_functions` for js and others)  
+   - cassandra.yaml: `enable_user_defined_functions` to `true` 
+(`enable_scripted_user_functions` for js and others)  
 
 #### UDA
 
- - custom aggregate function (`select average(avg_rating) from videos where release_year = 2002 allow filtering`)
+ - custom aggregate function (`select average(avg_rating) from videos where 
+release_year = 2002 allow filtering`)
  - state function called once for each row
  - value returned by state function becomes the new state
  - after all rows are processed, optional final function is executed with last state as arg
@@ -300,13 +302,21 @@ Counter columns cannot be indexed or deleted.
 ### Data modelling
 
 
-Conceptual data model + application workflow -> Mapping conceptual to logical -> logical data model -> physical data model -> optimization tuning
+Conceptual data model + application workflow ->
 
+Mapping conceptual to logical -> 
+
+logical data model -> 
+
+physical data model -> 
+
+optimization tuning
 
 
 #### Conceptual data model
 
-Entities and attributes. Technology independent. Abstract view of domain. Has relationships between entities. Relationships can have attributes.
+Entities and attributes. Technology independent. Abstract view of domain. 
+Has relationships between entities. Relationships can have attributes.
 
 #### Logical Data model
 
@@ -337,8 +347,9 @@ Single partition query - optimal
 
 ### Batches
 
-Batches are written all with the same timestamp, so if you insert then update then delete the same entity
-at read, all the sstable values are the latest, so the result is non-deterministic.
+Batches are written all with the same timestamp, so if you insert then update 
+then delete the same entity at read, all the sstable values are the 
+latest, so the result is non-deterministic.
 
 Batches guarantee that all instructions are written and eventually persisted.
 
