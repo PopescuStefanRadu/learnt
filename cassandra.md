@@ -431,6 +431,23 @@ https://docs.datastax.com/en/dsbulk/doc/index.html  recently Open sourcedi
 
 Driver is node aware and can send/request data to nodes directly.
 
+Driver needs only 1 contact point to get topology information, but if
+that one is down it's better to have multiple.
+
+Localdatacenter specified at connexion/session level.
+
+`SimpleStatement` - evaluate and assign attributes to a one-off statement
+
+`PreparedStatement` - use so that the query doesn't need to be validated
+each time
+
+`BoundStatement` - bind values to a prepared statement
+
+`ResultSet` 
+  - paged by default
+  - iterable
+  - contains rows and execution info
+
 ## CQLSH
 
 
@@ -460,6 +477,18 @@ create keyspace test2 WITH replication = {'class':'NetworkTopologyStrategy', 'DC
 create keyspace test2 WITH replication = {'class':'SimpleStrategy', 'replication_factor': 3};
 
 ```
+
+## Questions
+
+If i want to update with same UUID/TimeUUID is it necessary to have a full write/read cycle
+with C*?
+
+
+https://github.com/DataStax-Examples
+
+How do I get page 3 of a query directly, I get some bytevalue to get the next page,
+but I want page 3 directly.
+
 
 
 
