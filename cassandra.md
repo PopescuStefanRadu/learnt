@@ -476,12 +476,18 @@ create keyspace test2 WITH replication = {'class':'NetworkTopologyStrategy', 'DC
 
 create keyspace test2 WITH replication = {'class':'SimpleStrategy', 'replication_factor': 3};
 
+
+
+
+CONSISTENCY QUORUM;
+
+tracing on;
 ```
 
 ## Questions
 
 If i want to update with same UUID/TimeUUID is it necessary to have a full write/read cycle
-with C*?
+with C\*?
 
 
 https://github.com/DataStax-Examples
@@ -489,6 +495,8 @@ https://github.com/DataStax-Examples
 How do I get page 3 of a query directly, I get some bytevalue to get the next page,
 but I want page 3 directly.
 
+
+Seed node??
 
 
 
