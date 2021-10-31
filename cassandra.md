@@ -53,7 +53,6 @@ nodetool drain #flush data
 Strategy: per keyspace;
 
 
-
 can be changed via `ALTER KEYSPACE`
 
 caas-dc = replication factor (RF)
