@@ -100,7 +100,7 @@ necessary. Limited to datacenter
 
 read\_repair\_chance = 0 - read repair across all datacenters
 
-Read repair happens when consistency < ALL. =All implies repair
+Read repair happens when consistency < ALL. = All implies repair
 
 In an SSTable there is data for multiple partitions. An index keeps the file 
 offsets for each partition.
