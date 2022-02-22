@@ -87,29 +87,38 @@
 
 %-----------EDUCATION-----------------
 \section{Profile}
-      I'm a highly motivated developer like to be creative and take responsibility. Being a fast learner and a genuinely friendly person means that I can easily adapt to a variety of projects and requirements. I take pleasure in thoroughly understanding technologies in order to come up with informed solutions and maintainable implementations. My top skills include Kafka, Java, Spring Framework, Spark.
+      I'm a highly motivated developer who likes to be creative and take responsibility. Being a fast learner and a genuinely friendly person means that I can easily adapt to a variety of projects and requirements. I take pleasure in thoroughly understanding technologies in order to come up with informed solutions and maintainable implementations. My top skills include Go, Java, Kafka, Spring Framework, Spark.
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
     \resumeSubheading
       {eSolutions}{}
       {Software Developer}{Aug 2018}
       \resumeItemListStart
+	\resumeItem{Go}{
+	  Set up blueprints for Go web development handling common responsibilities: logging, dependency injection, error handling, swagger, http clients, configuration loading, project structure, gomock, best practices and examples. Developed microservices using the blueprints as a base.
+	}
         \resumeItem{Big Data}{
-          I was responsible for designing and implementing common big data requirements: acquisition(via NiFi \& MiNiFi), storage in various databases(Cassandra, HDFS, Solr, Redis, RDBMS), processing(Kafka with: streams, low level api consumer and producer, using Spring Cloud Stream), enrichment(Kafka, Spark on Scala), as well as application development such as adding customized continuous delivery and end-user configurability to our data collection service, building a reliable Avro schema registry backed by Apache Zookeeper and adding features to an authentication and authorization API gateway.
+          Responsible for designing and implementing common big data requirements: acquisition(via NiFi \& MiNiFi), storage in various databases(Cassandra, HDFS, Solr, Redis, RDBMS), processing(Kafka with: streams, low level api consumer and producer, using Spring Cloud Stream), enrichment(Kafka, Spark on Scala), as well as application development such as adding customized continuous delivery and end-user configurability to our data collection service, building a reliable Avro schema registry backed by Apache Zookeeper and adding features to an authentication and authorization API gateway.
           
           Monitored and debugged applications and data flows using ELK and Grafana.
           
-          After learning, researching and developing in my free time, I successfully advocated and delivered stream processing using Apache Kafka for significant code quality and performance improvements as a replacement to Spark batch processing.}
-        \resumeItem{Web development}
-          {Developed both front-end on Angular 7+ and backend on Spring Boot for multiple microservices used by a major retail chain. Developed complex queries using the JPA Criteria Api. Innovated by creating a library that simplifies table filtering. Mentored junior and intern colleagues. Worked and introduced new team members to an internal project that uses event sourcing and command query responsibility segregation. Independently developed small projects: a template based email sender, various PoCs and MVPs, technology demo apps}
-       \simpleResumeItem{}{
-       All projects used Java 8+, Kafka, AGILE methodology, testing done using Spock framework and either testcontainers or docker containers set up in bamboo.
-       }
-      \resumeItemListEnd
+          Advocated and delivered stream processing using Apache Kafka for significant code quality and performance improvements as a replacement to Spark batch processing.}
+        \resumeItem{Web development - Java 8+ & Typescript}{
+	  Developed both front-end on Angular 7+ and backend on Spring Boot for multiple microservices used by a major retail chain. Developed complex queries using the JPA Criteria Api. Innovated by creating a library that simplifies table filtering. Tested backends using Spock, testcontainers as well as shell started docker containers. Mentored junior and intern colleagues. Worked on and introduced new team members to projects that use our custom framework for event sourcing and command query responsibility segregation. Independently developed small projects: a template based email sender, various PoCs and MVPs, technology demo apps.
 
+	  Configured and customized Angular Authentication and Authorization modules to fit multi-token requirements backed by Keycloak in multiple projects and across multiple oidc client variants.
+}
+
+       	\simpleResumeItem{}{
+	Used Agile across all projects, mainly Scrum.
+	}
+	\simpleResumeItem{}{
+	Good enough knowledge and experience in using linux, bash, docker-compose, dockerbuild, git and other command-line utilities to get by. I'm also a strong supporter of using the CLI wherever and whenever possible thanks to its portability.  
+	}
+      \resumeItemListEnd
     \resumeSubheading
       {Soft Vision Media}{}
       {Java Developer}{Jul 2017 - Mar 2019}
@@ -146,10 +155,10 @@
 \section{Programming Skills}
   \resumeSubHeadingListStart
     \item{
-      \textbf{Programming Languages}{: Java, Typescript, Scala, Groovy, SQL, Javascript}
+      \textbf{Programming Languages}{: Java, Go, Typescript, Scala, Groovy, SQL, Javascript}
     }
     \item{
-      \textbf{Relevant technologies}{: Kafka, Spring Framework, Spark, Angular, Hadoop, Cassandra}
+      \textbf{Relevant technologies}{: Kafka, Spring Framework, Spark, Angular, Hadoop, Cassandra, NiFi, Nodered}
     }
     \item{
     \textbf{Languages}{: English - C1, German - beginner, French - beginner}
