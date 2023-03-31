@@ -81,15 +81,17 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large PURUPURUNAME} & Email : \href{mailto:PURUPURUMAIL}{PURUPURUMAIL}\\
+  \textbf{\Large PURUPURUNAME} & Email: \href{mailto:PURUPURUMAIL}{PURUPURUMAIL}\\
   Mobile: PURUPURUPHONE \\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
 \section{Profile}
-      Polyglot software developer with a 4 year+ track record of innovation and problem solving in web development and big data. 
+      Polyglot software developer with a 5+ year track record of innovation and problem solving in web development and big data. 
 
-      I enjoy creating simple, reusable, clean code solutions for complex problems. I focus on having a larger impact by automating common tasks and constantly enhancing my knowledge and sharing it both with my team as part of the development process and cross-team through presentations and demos. My top skills include Go, Java, Kafka, Spring Framework, Spark.
+      I enjoy creating simple, reusable, clean code solutions for complex problems. 
+      I focus on having a larger impact by automating common tasks and constantly enhancing and sharing my knowledge. 
+      My top skills include Go, Java, Kafka, Spring Framework, Spark.
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -99,43 +101,77 @@
       {eSolutions}{}
       {Software Developer}{Aug 2018 - present}
       \resumeItemListStart
-	\resumeItem{Go}{
-	  Set up blueprints for Go web development handling common responsibilities in a project migrating from node to Go: logging, dependency injection, error handling, swagger, http clients, configuration loading, project structure, gomock, best practices and examples. Developed microservices using the blueprints as a base and spearheaded Go development across teams through thorough research, presentations, demos, mentoring. Developed highly scalable solutions using AWS services like SQS and DynamoDB to satisfy production requirements.
+	\resumeItem{Go web development}{
+	  Initially self-taught and driven by personal ambition, I became proficient in Go and fulfilled the following 
+	  responsibilities for our clients:
+
+          \labelitemii \ Set up blueprints for Go web development handling common responsibilities in a project migrating from node to Go:
+          logging, dependency injection, error handling, swagger, http clients, configuration loading, project structure, testing, 
+	  mocking, best practices and examples. 
+
+	  \labelitemii \ Developed microservices using the aforementioned blueprints and spearheaded Go development across
+	  teams through thorough research, presentations, demos, mentoring. 
+
+	  \labelitemii \ Developed highly scalable solutions using AWS services such as SQS and DynamoDB to satisfy production requirements.
 	}
         \resumeItem{Big Data}{
-          Responsible for designing and implementing common big data requirements: acquisition(via NiFi \& MiNiFi), storage in various databases(Cassandra, HDFS, Solr, Redis, RDBMS), processing(Kafka with: streams, low level api consumer and producer, using Spring Cloud Stream), enrichment(Kafka, Spark on Scala), as well as application development such as adding customized continuous delivery and end-user configurability to our data collection service, building a reliable Avro schema registry backed by Apache Zookeeper and adding features to an authentication and authorization API gateway.
-          
-          Monitored and debugged applications and data flows using ELK and Grafana.
-          
-          Advocated and delivered stream processing using Apache Kafka for significant code quality and performance improvements as a replacement to Spark batch processing.}
-        \resumeItem{Web development - Java 8+ & Typescript}{
-	  Developed both front-end on Angular 7+ and backend on Spring Boot for multiple microservices used by a major retail chain. Developed complex queries using the JPA Criteria Api. Innovated by creating a library that simplifies request parameter driven table filtering. Tested backends using Spock, testcontainers as well as shell started docker containers. Held courses for interns and mentored junior colleagues. Worked on and introduced new team members to projects that use our custom framework for event sourcing and command query responsibility segregation.  
+          Responsible for designing and implementing common big data requirements: 
+	  
+	  \labelitemii \ acquisition via NiFi \& MiNiFi.
 
-	  Configured and customized Angular Authentication and Authorization modules to fit multi-token requirements in multiple projects and across multiple OIDC client variants, all backed by keycloak.
+	  \labelitemii \ storage using Cassandra, HDFS, Solr, Redis, RDBMS.
+
+
+	  \labelitemii \ processing using Kafka Streams, Kafka low level api consumer and producer, Kafka using Spring Cloud Stream.
+
+	  \labelitemii \ enrichment using Kafka, Spark with Scala.
+
+	  \labelitemii \ application development such as: adding customized continuous delivery and configurability to our edge data 
+	  ingestion application, building a reliable Avro schema registry backed by Apache Zookeeper, adding features to an authentication and authorization API gateway.
+	  
+          \labelitemii \ monitored and debugged applications and data flows using ELK and Grafana.
+          
+          \labelitemii \ advocated and delivered stream processing using Apache Kafka for significant code quality and 
+	  performance improvements as a replacement to Spark batch processing.}
+        \resumeItem{Web development - Java 8+ \& Typescript}{
+	  Developed both front-end on Angular 7+ and backend on Spring Boot for multiple microservices used by a major retail chain. 
+
+	  \labelitemii \ Developed complex queries using the JPA Criteria Api. 
+
+	  \labelitemii \ Innovated by creating a library that simplifies request parameter driven table filtering. 
+
+	  \labelitemii \ Tested backends using Spock, testcontainers as well as shell started docker containers. 
+
+
+	  \labelitemii \ Worked on and introduced new team members to projects that use our custom framework for event sourcing and command query responsibility segregation.  
+
+	  \labelitemii \ Configured and customized Angular Authentication and Authorization modules to fit multi-token requirements 
+	  in multiple projects and across multiple OIDC client variants, all backed by keycloak.
+
+	\resumeItem{Others} {
+	  
+	  \labelitemii \ Held Java, Spring and Git courses to multiple generations of interns and mentored junior colleagues.
+
+	  \labelitemii \ Used Agile across all projects: Scrum and Kanban.
+
+	  \labelitemii \ Knowledge and experience in using linux, bash, docker-compose, git and various command-line utilities.
+
+	  \labelitemii \ Used docker, docker-compose, Dockerbuild, gitops, kubernetes across all projects for deployment, 
+	  local testing and development.
+
+	  \labelitemii \ Used microservices architecture extensively across all projects.
+
+	  \labelitemii \ Took part in the interviewing process for Java internships and Go developer positions.
+	}
 }
-       	\simpleResumeItem{}{
-	Used Agile across all projects, mainly Scrum.
-	}
-	\simpleResumeItem{}{
-	Knowledge and experience in using linux, bash, docker-compose, git and other command-line utilities. Held courses on which I heavily relied and promoted the use of CLI as opposed to GUI tools. 
-	}
-	\simpleResumeItem{}{
-	Used docker, docker-compose, Dockerbuild, gitops across all projects for deployment, testing and local development setup. 
-	}
-	\simpleResumeItem{}{
-	Good conceptual knowledge of kubernetes, which I have acquired in finding efficient bigdata solutions and sending the requirements to the devops teams. 
-	}
- 	\simpleResumeItem{}{
-	Used microservices architecture extensively across all projects.
-	}
-     
+\newline\newline\newline
   \resumeItemListEnd
     \resumeSubheading
       {Soft Vision Media}{}
       {Java Developer}{Jul 2017 - Mar 2018}
       \resumeItemListStart
         \simpleResumeItem{
-          Wrote data transformation code using XSLT and CSV parsers in order to integrate the company's product with various EDI providers. Built simple API integrations with various services}
+          Wrote data transformation code using XSLT and CSV parsers in order to integrate the company's product with various EDI providers. Built simple API integrations with various services.}
       \resumeItemListEnd
     \resumeSubheading
       {Eau de Web}{}
@@ -154,9 +190,9 @@
     \resumeSubItem{Android Task Manager}
       {As part of a college project, using Dagger 2}
     \resumeSubItem{Web scraper}
-      {Written using Java and JSoup with storage backed by mysql as part of a larger collaborative filtering and data analysis goal}
+      {Written using Java and JSoup with storage backed by mysql as part of a larger collaborative filtering and data analysis goal.}
     \resumeSubItem{Wordpress instance}
-      {Customized and deployed a Wordpress blog on my personal bare-metal machine including bind9 installation and configuration}
+      {Customized and deployed a Wordpress blog on my personal bare-metal machine including bind9 DNS server installation and configuration.}
     \resumeSubItem{Blog}
       {Self-learned programming by writing a no-framework MVC architecture blog using php. Ported it to Symphony 2 later on.}
   \resumeSubHeadingListEnd
@@ -165,7 +201,7 @@
 \section{Programming Skills}
   \resumeSubHeadingListStart
     \item{
-      \textbf{Programming Languages}{: Java, Go, Typescript, Scala, Groovy, SQL, Javascript}
+      \textbf{Programming Languages}{: Go, Java, Typescript, Scala, Groovy, SQL, Javascript}
     }
     \item{
       \textbf{Relevant technologies}{: Kafka, Spring Framework, Spark, Angular, Hadoop, Keycloak, Cassandra, NiFi, NodeRED, AWS SQS, AWS DynamoDB}
