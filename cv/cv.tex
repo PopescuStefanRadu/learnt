@@ -128,6 +128,8 @@
 
 	  \labelitemii \ application development such as: adding customized continuous delivery and configurability to our edge data 
 	  ingestion application, building a reliable Avro schema registry backed by Apache Zookeeper, adding features to an authentication and authorization API gateway.
+
+	  \labelitemii \ built another Avro schema registry which featured kafka topic backing, O(1) memory allocation thanks to extensive use of caching and efficient synchronization by waking up threads only when required. This improvement reduced memory allocation and CPU usage to 50\% and message sizes to 1/6.
 	  
           \labelitemii \ monitored and debugged applications and data flows using ELK and Grafana.
           
@@ -138,7 +140,7 @@
 
 	  \labelitemii \ Developed complex queries using the JPA Criteria Api. 
 
-	  \labelitemii \ Innovated by creating a library that simplifies request parameter driven table filtering. 
+	  \labelitemii \ Innovated by creating a library which simplifies the development experience for writing code that returns filtered lists for REST api's.
 
 	  \labelitemii \ Tested backends using Spock, testcontainers as well as shell started docker containers. 
 
