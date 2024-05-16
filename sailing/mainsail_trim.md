@@ -98,3 +98,8 @@ This affects the position of the belly of the sail as well as flattening the sai
 The goal is usually to get the belly in the middle of the sail.
 
 ### Outhaul
+
+Controls the size of the belly in its lower third.
+
+Never ease the outhaul more than 15%(of the overall length of the sail's foot).
+
