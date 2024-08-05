@@ -87,57 +87,60 @@
 
 %-----------EDUCATION-----------------
 \section{Profile}
-      Polyglot software developer with a 5+ year track record of innovation and problem solving in web development and big data. 
+      Polyglot software developer with 6+ years of experience in web development and big data.
 
-      I enjoy creating simple solutions for complex problems. 
-      I focus on having a larger impact by automating common tasks and constantly enhancing and sharing my knowledge. 
+      Writing Go for the better part of past 3 years.
+      
       My top skills include Go, Java, Kafka, Cassandra, Spring Framework, Spark.
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
 \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRP Hyperplay}{}
+      {Administrator}{Apr 2024 - Present}
+      \resumeItemListStart
+        \resumeItem{Senior Go Developer @ Kubeark}{
+	  Developed core business products as part of a small but highly efficient team.
 
+		\labelitemii \ Workflow engine design and implementation with state backed by Temporal.
+
+                \labelitemii \ Project migrations from Python to Go.
+	}
+      \resumeItemListEnd
     \resumeSubheading
       {eSolutions}{}
-      {Software Developer}{Aug 2018 - present}
+      {Senior Software Developer}{Aug 2018 - Mar 2024}
       \resumeItemListStart
-	\resumeItem{Go web development}{
-	  Initially self-taught and driven by personal ambition, I became proficient in Go and fulfilled the following 
-	  responsibilities for our clients:
+	\resumeItem{Senior Go Developer}{
+	  Thanks to my previous experience I quickly became proficient in Go and fulfilled the following responsibilities for our clients:
 
-          \labelitemii \ Set up blueprints for Go web development handling common responsibilities in a project migrating from node to Go:
-          logging, dependency injection, error handling, swagger, http clients, configuration loading, project structure, testing, 
+          \labelitemii \ Application architecture and design. Setting up github and gitlab and github CI/CD, project structure, logging, dependency injection, error handling, api documentation, http clients, configuration, testing, data access patterns,
 	  mocking, best practices and examples. 
 
-	  \labelitemii \ Developed microservices using the aforementioned blueprints and spearheaded Go development across
-	  teams through thorough research, presentations, demos, mentoring. 
+	  \labelitemii \ Spearheaded Go development across teams through thorough POCs, presentations, workshops, demos, mentoring. 
 
 	  \labelitemii \ Developed highly scalable solutions using AWS services such as SQS and DynamoDB to satisfy production requirements.
-
-	  \labelitemii \ Promoted Go internally via two ligthning talks (30 min) and a one week full-day Go workshop/course.
-
-	  \labelitemii \ Set up infrastructure (gitlab pipeline to build, test, lint, deploy) for an internal Go-based project and did mentored the team members on said project.
 	}
         \resumeItem{Big Data}{
           Responsible for designing and implementing common big data requirements: 
 	  
-	  \labelitemii \ acquisition via NiFi \& MiNiFi.
+	  \labelitemii \ Acquisition via NiFi \& MiNiFi.
 
-	  \labelitemii \ storage using Cassandra, HDFS, Solr, Redis, RDBMS.
+	  \labelitemii \ Storage using Cassandra, HDFS, Solr, Redis, RDBMS.
 
+	  \labelitemii \ Processing using Kafka Streams, Kafka low level api consumer and producer, Kafka using Spring Cloud Stream.
 
-	  \labelitemii \ processing using Kafka Streams, Kafka low level api consumer and producer, Kafka using Spring Cloud Stream.
+	  \labelitemii \ Enrichment using Kafka, Spark with Scala.
 
-	  \labelitemii \ enrichment using Kafka, Spark with Scala.
-
-	  \labelitemii \ application development such as: adding customized continuous delivery and configurability to our edge data 
+	  \labelitemii \ Application development such as: adding customized continuous delivery and configurability to our edge data 
 	  ingestion application, building a reliable Avro schema registry backed by Apache Zookeeper, adding features to an authentication and authorization API gateway.
 
-	  \labelitemii \ built another Avro schema registry which featured kafka topic backing, O(1) memory allocation thanks to extensive use of caching and efficient synchronization by waking up threads only when required. This improvement reduced memory allocation and CPU usage to 50\% and message sizes to 1/6.
+	  \labelitemii \ Reduced memory allocation to 50\%, CPU usage to 50\% and message sizes to 15\% via a second Avro schema registry implementation. The implementation featured efficient thread synchronization using a low-level implementation equivalent of Go's singleflight, O(1) memory allocation and Kafka Topic backing, allowing for a 0 dependency deployment.
 	  
-          \labelitemii \ monitored and debugged applications and data flows using ELK and Grafana.
+          \labelitemii \ Monitored and debugged applications and data flows using ELK and Grafana.
           
-          \labelitemii \ advocated and delivered stream processing using Apache Kafka for significant code quality and 
+          \labelitemii \ Advocated and delivered stream processing using Apache Kafka for significant code quality and 
 	  performance improvements as a replacement to Spark batch processing.}
 
         \resumeItem{Web development - Java 8+ \& Typescript}{
@@ -149,23 +152,20 @@
 
 	  \labelitemii \ Tested backends using Spock, testcontainers as well as shell started docker containers. 
 
-
 	  \labelitemii \ Worked on and introduced new team members to projects that use our custom framework for event sourcing and command query responsibility segregation.  
 
 	  \labelitemii \ Configured and customized Angular Authentication and Authorization modules to fit multi-token requirements 
-	  in multiple projects and across multiple OIDC client variants, all backed by keycloak.
+	  in multiple projects and across multiple OIDC client variants.
 
 	\resumeItem{Others} {
 
 	  \labelitemii \ Held a two day course on Kafka and how to use it with Spring Kafka.
-	
-	  \labelitemii \ Held internal presentations promoting Go: "Go is simple", "Life without frameworks" as well as a 1 week Go workshop.  
 	  
 	  \labelitemii \ Held Java, Spring and Git courses to three generations of interns and mentored junior colleagues.
 
-	  \labelitemii \ Used Agile across all projects: Scrum and Kanban.
+	  \labelitemii \ Used Agile across all projects either as Scrum or as Kanban.
 
-	  \labelitemii \ Used Kubernetes, Docker, kustomize/helm together with bamboo/jenkins and Argo for most if not all projects and was repsonsible for further configuring CI/CD. Exception was Big Data work for which YARN was standard practice instead of K8s at the time.
+	  \labelitemii \ Used Kubernetes, Docker, kustomize/helm together with bamboo/jenkins and Argo for most if not all projects and was repsonsible for further configuring CI/CD.
 
 	  \labelitemii \ Knowledge and experience in using linux, bash, docker-compose, git and various command-line utilities.
 
@@ -177,8 +177,8 @@
 	  \labelitemii \ Took part in the interviewing process for Java internships and Go developer positions.
 	}
 }
-\newline\newline\newline
-  \resumeItemListEnd
+      \resumeItemListEnd
+      \newline\newline\newline
     \resumeSubheading
       {Soft Vision Media}{}
       {Java Developer}{Jul 2017 - Mar 2018}
