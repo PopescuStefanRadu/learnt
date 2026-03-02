@@ -1,3 +1,5 @@
+# Angular
+
 html attribute, dom property
 
 
@@ -30,9 +32,7 @@ ngOnChanges receives changes on inputs as an object: changes.field1, changes.fie
 ngOnChanges is ran after to @Input() annotated properties
 
 
-
 DoCheck - check for changes that angular cannot detect automatically
-
 
 
 @ViewChild -> reference to component from template with same name \(#)
@@ -56,7 +56,6 @@ multi-provider \(multi) - add extra instance but inject all of them
 
 
 
-
 router - can nest router outlets using child routes
 
 secondary routers - use outlets
@@ -71,9 +70,8 @@ Route guards:
    \(such as preventing leaving an unsaved form without confirmation)
  - CanLoad - Used to determine whether the user can navigate to a lazy loaded
    module prior to loading it
- - Resolve -  Used to access route data and pass data to the component’s list of
+ - Resolve -  Used to access route data and pass data to the component's list of
    providers
-
 
 
 
@@ -88,6 +86,22 @@ Local dev solutions:
 differently from @angular-devkit/build-angular so always point to dist js files)
 
 
+## Misc notes from learnt.md
 
-
-
+ - package json
+ - ng serve - run
+ - npm install --save bootstrap@3 (local, cea mai noua din v3)
+ - angular.json -> styles
+ - typescript - use single quotes
+ - binding 
+    - ts -> template: string interpolation; attribute/property binding??
+    - html -> ts : event binding
+    - ngModel
+ - * - directiva structurala??? TODO
+ - ng generate component shoes/shoe-edit /// ng g c // --spec=false
+ - var str: string; var qty = +str; //conversion to number
+ - @ViewChild - ajungi sa faci din component un Session Managed Bean a la JSF
+ - ng-content + @ContentChild() pt cand vreau ca directiva sa foloseasca ce 
+este in interiorul <app-component-name></app-component-name>
+ - https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json - angular-ci options for serve, etc.
+ - https://github.com/angular/angular-cli/wiki/angular-workspace angular cli schema
