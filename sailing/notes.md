@@ -33,14 +33,11 @@ Waves - you need more power to maintain boat speed so increase camber
 
 
 
-
-
 ## Tacking
 
 Stop turning when the sail is filled with air to not underturn or overturn
 
-### Terms
-
+## Terms
 
 Aft - situated towards stern, sternwards
 
@@ -90,9 +87,7 @@ boom vang - kicking strap (UK) - pulls the boom and the mast aft
 angle of attack - the angle between the wing/sail and the wind
 
 
-
-
-#### Copied from some site:
+## Glossary (EN - RO)
 
 Mast – Catarg
 
@@ -181,7 +176,7 @@ sprijin.
 
 Bowsprit – Bompres – catargul din vârful provei.
 
-Companionway – Salon – “sufrageria” din cabina navei.
+Companionway – Salon – "sufrageria" din cabina navei.
 
 Galley – Cambuză. Bucătăria unei nave.
 
@@ -239,11 +234,3 @@ Lunii Noi.
 
 Neap tide – Maree Moartă (sau de cuadratură) – perioada de maree minimă; are 
 loc în preajma primului și ultimului Pătrar.
-
-
-TODO - unify with rest? categorise
-
-
-
-
-

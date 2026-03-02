@@ -182,3 +182,9 @@ data storage & retrieval with cell-level access control
 #NiFI & MiNiFi
 
 
+
+## Open Questions
+
+1. de ce 3 replicas minim? ce se intampla daca moare cel cu starea corecta etc.?
+2. what's the point of the secondary NameNode
+

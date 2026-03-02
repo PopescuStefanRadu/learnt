@@ -1,5 +1,69 @@
+# Java
 
+## Streams
 
+ - ``Predicate`` ``.and`` and ``.or`` are evaluated in a chain from left to right :( 
+ 
+## Concurrency
+
+### Liveness
+
+ - deadlock, starvation, livelock
+
+ - Reentrancy means that locks are acquired 
+on a per-thread rather than per-invocation basis 
+
+ - Reentrancy lock counter per thread 2^32 iirc TODO check
+
+ - out of thin air thread safety - not volatile, but not long or double, 
+when synchronized mutation don't require volatile since they are intrinsically atomic
+
+### Visibility
+
+ - While it may seem that field values set in a constructor are the first values written to those fields and therefore that there are no "older"
+values to see as stale values, the Object constructor first writes the default values to all fields before subclass constructors run. It is therefore
+possible to see the default value for a field as a stale value.
+
+ - Immutable objects can be used safely by any thread without additional synchronization, even when synchronization is
+not used to publish them
+ - Safe publication 
+   - Initializing in ``static``
+   - Storing in ``volatile`` or ``AtomicReference``
+   - Storing in ``final`` field of a properly constructed object
+   - Storing reference in a field that is properly guarded by a lock
+
+ - volatile - operations are not reordered by the compiler and are not cached 
+
+ - ``-server`` argument runs jvm in a mode that optimizes more aggressively
+
+ - You can use volatile variables only when all the following criteria are met:
+
+   - Writes to the variable do not depend on its current value, or you can ensure that 
+only a single thread ever updates the value;
+
+   - The variable does not participate in invariants with other state variables;
+
+   - Locking is not required for any other reason while the variable is being accessed.
+
+ - inner class instances contain a hidden reference to the enclosing instance
+
+ - letting this escape from constructor (or anywhere else) -> 1. object escaping, 
+2.possibly not fully instantiated
+
+### Thread confinement
+
+ - Ad-hoc = volatile with serialized atomic changes
+
+ - Stack confinement = local vars are implicitly confined (thread-local vars)
+ 
+ - ThreadLocal = "Like global variables, thread-local variables can detract from reusability
+and introduce hidden couplings among classes, and should therefore be used
+with care."
+
+ - volatile immutable holders for sharing state + atomic serialized tranformations
+
+ - "To share mutable objects safely, they must
+be safely published and be either thread-safe or guarded by a lock."
 
 ## Generics Madness
 
@@ -255,12 +319,3 @@ Cannot use different instantiations of same generic type as bounds of a type par
 ```
 class Foo<T extends Comparable<T> & Comparable<String>> // error
 ```
-
-
- 
-
-
-
-
-
-

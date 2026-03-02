@@ -1,4 +1,3 @@
-
 # What we do on IDEs:
 
  - Open and navigate files
@@ -54,3 +53,13 @@ Disable:
 Missing:
 
  - Fuzzy search
+
+### Code
+
+ - ctrl-shift-A pt search in optiuni etc
+ - crtl-alt-m extrage in metoda
+
+### HTML in IntelliJ
+
+ - daca scriu li si apas tab atunci imi transforma in <li></li>, etc.
+ - . + tab = new div with class
