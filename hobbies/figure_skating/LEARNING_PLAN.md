@@ -57,7 +57,7 @@ The plan follows the **Learn to Skate USA Adult Curriculum (Levels 1-6)** as its
 - [ ] Snowplow stop (one foot and two feet)
   - [Snowplough Stop – Ice Coach Online](https://www.youtube.com/watch?v=uH3ozA7e3zw)
   - [How to Stop on Ice Skates – Coach Mary](https://www.youtube.com/watch?v=COJOyWCYoHc)
-- [ ] Two-foot turns (forward to backward, standing still)
+- [x] Two-foot turns (forward to backward, standing still)
   - [Two Foot Turn Tutorial – Coach Julia](https://www.youtube.com/watch?v=BCCXsY1RX0E)
   - [Two Foot Turns – Ice Coach Online](https://www.youtube.com/watch?v=z8NdzDnCsx4)
 
@@ -94,28 +94,28 @@ You can glide forward on two feet for the full length of the rink, stop reliably
 
 ### On-Ice Skills
 
-- [ ] Forward stroking (alternate pushing, full blade extension)
+- [x] Forward stroking (alternate pushing, full blade extension)
   - [Forward Stroking Tutorial – Coach Julia](https://www.youtube.com/watch?v=8vaZXbHHQxM)
   - [Forward Stroking: Beginner to Advanced – Style Skating](https://www.youtube.com/watch?v=YPsnG4SxfEU)
-- [ ] Forward half-swizzle pumps on a circle (CW and CCW)
+- [x] Forward half-swizzle pumps on a circle (CW and CCW)
   - [Half Swizzle Pumps Lesson 19 – Coach Mary](https://www.youtube.com/watch?v=ssk15saJpOg)
   - [Learn Half Swizzle Pumps – Coach Julia](https://www.youtube.com/watch?v=et5Jt1PMAk8)
-- [ ] Backward one-foot glides (R and L)
+- [x] Backward one-foot glides (R and L)
   - [1 Foot Glide – IceSkating.London](https://www.youtube.com/watch?v=55CXMXcTaP8)
   - [One-Foot Glide Exercises, All Levels – Style Skating](https://www.youtube.com/watch?v=zekvs0t5YfE)
 - [ ] Backward snowplow stop
   - [Forward and Backward Snowplow Stops – Ice Coach Online](https://www.youtube.com/watch?v=H-l83LNv8j8)
   - [How to Stop Backwards on Ice – Ice Coach Online](https://www.youtube.com/watch?v=0qYMeMdojAE)
-- [ ] Forward outside edges on a circle (R and L)
+- [x] Forward outside edges on a circle (R and L)
   - [Forward Edges Lesson 25 – Coach Mary](https://www.youtube.com/watch?v=7CmXQkBSxmw)
   - [Edge Class: Drills for Beginners – Coach Mary](https://www.youtube.com/watch?v=Kch5PSAMIDY)
-- [ ] Forward inside edges on a circle (R and L)
+- [x] Forward inside edges on a circle (R and L)
   - [Forward Edges Lesson 25 – Coach Mary](https://www.youtube.com/watch?v=7CmXQkBSxmw) (covers both outside and inside)
   - [Forward Crossovers – Adult Basic Skills 4 – Mindful Banter](https://www.youtube.com/watch?v=DS18P9FBSXA) (edges section)
-- [ ] Forward crossovers (CW and CCW) — **the biggest unlock at this level**
+- [x] Forward crossovers (CW and CCW) — **the biggest unlock at this level**
   - [Forward Crossovers Lesson 26 – Coach Mary](https://www.youtube.com/watch?v=L053frPasC4)
   - [Forward Crossovers Tutorial – Coach Mary](https://www.youtube.com/watch?v=pgwVCAiRrDk)
-- [ ] Backward half-swizzle pumps on a circle
+- [x] Backward half-swizzle pumps on a circle
   - [Half Swizzle Pumps Lesson 19 – Coach Mary](https://www.youtube.com/watch?v=ssk15saJpOg) (covers backward)
   - [Learn Half Swizzle Pumps – Coach Julia](https://www.youtube.com/watch?v=et5Jt1PMAk8)
 - [ ] Hockey stop (both directions)
@@ -156,13 +156,13 @@ You can do forward crossovers in both directions maintaining a steady circle, an
 
 ### On-Ice Skills
 
-- [ ] Backward outside edges on a circle (R and L)
+- [x] Backward outside edges on a circle (R and L)
   - [Backward Outside and Inside Edges – IceSkating.London](https://www.youtube.com/watch?v=XYRyOJRXr74)
   - [Backward Edges – Story Tasting / BonBon Academy](https://www.youtube.com/watch?v=nda49fCN74I)
-- [ ] Backward inside edges on a circle (R and L)
+- [x] Backward inside edges on a circle (R and L)
   - [Backward Outside and Inside Edges – IceSkating.London](https://www.youtube.com/watch?v=XYRyOJRXr74) (covers both)
   - [Backward Inside to Outside Change of Edge – IceSkating.London](https://www.youtube.com/watch?v=AKkQdqh13HM)
-- [ ] Backward crossovers (CW and CCW)
+- [x] Backward crossovers (CW and CCW)
   - [Backward Crossovers – Coach Julia](https://www.youtube.com/watch?v=9mhnUmSCTUY)
   - [Ultimate Backwards Crossovers Guide – iSkateCoach](https://www.youtube.com/watch?v=ic732CSPn9g)
 - [ ] Forward outside three-turns (R and L) — **gateway to everything in figure skating**
