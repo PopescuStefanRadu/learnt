@@ -4,6 +4,10 @@
 **Goal:** Structured progression from beginner fundamentals to advanced skills
 **Estimated timeline:** 18-24 months (skating 2-3x/week + off-ice training)
 
+Heat molding:
+
+https://wifa.at/technical-guide/
+
 ---
 
 ## Your Skates: WIFA Notes
