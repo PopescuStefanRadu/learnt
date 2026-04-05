@@ -58,10 +58,10 @@ The plan follows the **Learn to Skate USA Adult Curriculum (Levels 1-6)** as its
 - [x] Backward wiggles / backward swizzles
   - [Backwards Swizzles Lesson 21 – Coach Mary](https://www.youtube.com/watch?v=_fc6CMS0SWY)
   - [How to Skate Backwards – Coach Julia](https://www.youtube.com/watch?v=dZsfWfYxqzw)
-- [ ] Snowplow stop (one foot and two feet)
+- [x] Snowplow stop (one foot and two feet)
   - [Snowplough Stop – Ice Coach Online](https://www.youtube.com/watch?v=uH3ozA7e3zw)
   - [How to Stop on Ice Skates – Coach Mary](https://www.youtube.com/watch?v=COJOyWCYoHc)
-- [ ] Two-foot turns (forward to backward, standing still)
+- [x] Two-foot turns (forward to backward, standing still)
   - [Two Foot Turn Tutorial – Coach Julia](https://www.youtube.com/watch?v=BCCXsY1RX0E)
   - [Two Foot Turns – Ice Coach Online](https://www.youtube.com/watch?v=z8NdzDnCsx4)
 
@@ -98,28 +98,28 @@ You can glide forward on two feet for the full length of the rink, stop reliably
 
 ### On-Ice Skills
 
-- [ ] Forward stroking (alternate pushing, full blade extension)
+- [x] Forward stroking (alternate pushing, full blade extension)
   - [Forward Stroking Tutorial – Coach Julia](https://www.youtube.com/watch?v=8vaZXbHHQxM)
   - [Forward Stroking: Beginner to Advanced – Style Skating](https://www.youtube.com/watch?v=YPsnG4SxfEU)
-- [ ] Forward half-swizzle pumps on a circle (CW and CCW)
+- [x] Forward half-swizzle pumps on a circle (CW and CCW)
   - [Half Swizzle Pumps Lesson 19 – Coach Mary](https://www.youtube.com/watch?v=ssk15saJpOg)
   - [Learn Half Swizzle Pumps – Coach Julia](https://www.youtube.com/watch?v=et5Jt1PMAk8)
-- [ ] Backward one-foot glides (R and L)
+- [x] Backward one-foot glides (R and L)
   - [1 Foot Glide – IceSkating.London](https://www.youtube.com/watch?v=55CXMXcTaP8)
   - [One-Foot Glide Exercises, All Levels – Style Skating](https://www.youtube.com/watch?v=zekvs0t5YfE)
-- [ ] Backward snowplow stop
+- [x] Backward snowplow stop
   - [Forward and Backward Snowplow Stops – Ice Coach Online](https://www.youtube.com/watch?v=H-l83LNv8j8)
   - [How to Stop Backwards on Ice – Ice Coach Online](https://www.youtube.com/watch?v=0qYMeMdojAE)
-- [ ] Forward outside edges on a circle (R and L)
+- [x] Forward outside edges on a circle (R and L)
   - [Forward Edges Lesson 25 – Coach Mary](https://www.youtube.com/watch?v=7CmXQkBSxmw)
   - [Edge Class: Drills for Beginners – Coach Mary](https://www.youtube.com/watch?v=Kch5PSAMIDY)
-- [ ] Forward inside edges on a circle (R and L)
+- [x] Forward inside edges on a circle (R and L)
   - [Forward Edges Lesson 25 – Coach Mary](https://www.youtube.com/watch?v=7CmXQkBSxmw) (covers both outside and inside)
   - [Forward Crossovers – Adult Basic Skills 4 – Mindful Banter](https://www.youtube.com/watch?v=DS18P9FBSXA) (edges section)
-- [ ] Forward crossovers (CW and CCW) — **the biggest unlock at this level**
+- [x] Forward crossovers (CW and CCW) — **the biggest unlock at this level**
   - [Forward Crossovers Lesson 26 – Coach Mary](https://www.youtube.com/watch?v=L053frPasC4)
   - [Forward Crossovers Tutorial – Coach Mary](https://www.youtube.com/watch?v=pgwVCAiRrDk)
-- [ ] Backward half-swizzle pumps on a circle
+- [x] Backward half-swizzle pumps on a circle
   - [Half Swizzle Pumps Lesson 19 – Coach Mary](https://www.youtube.com/watch?v=ssk15saJpOg) (covers backward)
   - [Learn Half Swizzle Pumps – Coach Julia](https://www.youtube.com/watch?v=et5Jt1PMAk8)
 - [ ] Hockey stop (both directions)
@@ -160,19 +160,19 @@ You can do forward crossovers in both directions maintaining a steady circle, an
 
 ### On-Ice Skills
 
-- [ ] Backward outside edges on a circle (R and L)
+- [x] Backward outside edges on a circle (R and L)
   - [Backward Outside and Inside Edges – IceSkating.London](https://www.youtube.com/watch?v=XYRyOJRXr74)
   - [Backward Edges – Story Tasting / BonBon Academy](https://www.youtube.com/watch?v=nda49fCN74I)
-- [ ] Backward inside edges on a circle (R and L)
+- [x] Backward inside edges on a circle (R and L)
   - [Backward Outside and Inside Edges – IceSkating.London](https://www.youtube.com/watch?v=XYRyOJRXr74) (covers both)
   - [Backward Inside to Outside Change of Edge – IceSkating.London](https://www.youtube.com/watch?v=AKkQdqh13HM)
-- [ ] Backward crossovers (CW and CCW)
+- [x] Backward crossovers (CW and CCW)
   - [Backward Crossovers – Coach Julia](https://www.youtube.com/watch?v=9mhnUmSCTUY)
   - [Ultimate Backwards Crossovers Guide – iSkateCoach](https://www.youtube.com/watch?v=ic732CSPn9g)
-- [ ] Forward outside three-turns (R and L) — **gateway to everything in figure skating**
+- [x] Forward outside three-turns (R and L) — **gateway to everything in figure skating**
   - [Forward Outside Three-Turn – Coach Julia](https://www.youtube.com/watch?v=njqJC85X8U0)
   - [Forward 3 Turns Lesson 29 – Coach Mary](https://www.youtube.com/watch?v=BP-_2D6_iBE)
-- [ ] Forward inside three-turns (R and L)
+- [x] Forward inside three-turns (R and L)
   - [Secrets to Great Forward Inside 3-Turn – Next Edge Tutorials](https://www.youtube.com/watch?v=Pf84NCH6u2E)
   - [Inside 3 Turns the Easy Way – iSkateCoach](https://www.youtube.com/watch?v=b3Ows-gzKlg)
 - [ ] Forward swing rolls to a count of 6
@@ -181,7 +181,7 @@ You can do forward crossovers in both directions maintaining a steady circle, an
 - [ ] T-stop (R or L)
   - [T-Stop in Figure Skates – Coach Julia](https://www.youtube.com/watch?v=K1Kf0DOrb0I)
   - [How to Stop on Ice Skates: T-Stop – Ice Coach Online](https://www.youtube.com/watch?v=aG2X6zxLgfE)
-- [ ] Lunge
+- [x] Lunge
   - [Forward Drag/Lunge Tutorial – Ice Coach Online](https://www.youtube.com/watch?v=uugr7OSG164)
 - [ ] Two-foot spin → one-foot spin (upright scratch spin)
   - [One Foot Spin – Coach Julia (281K views)](https://www.youtube.com/watch?v=zyat2c-5MXw)
@@ -224,7 +224,7 @@ You can execute three-turns in both directions without stepping out of them, hol
 
 ### On-Ice Skills
 
-- [ ] Waltz jump (half-rotation jump — your first real jump)
+- [x] Waltz jump (half-rotation jump — your first real jump)
   - [Waltz Jump Tutorial (adult-focused) – Journeybacktotheice](https://www.youtube.com/watch?v=6_kN32PMNCo)
   - [Waltz Jump Off-Ice Tutorial – Coach Mary](https://www.youtube.com/watch?v=vFIarLA24II)
 - [ ] Salchow jump (from back inside edge)
@@ -410,27 +410,5 @@ https://www.coachmaryfigureskating.com/elevate
 
 4. **Flexibility is your bottleneck.** Spend 2x more time on hip flexors and ankles than you think you need. A 32-year-old male hip is not a 12-year-old girl's hip, and that's fine — adjust expectations on spirals and laybacks, and focus on power moves, spins, and jump quality.
 
-5. **WIFA boot break-in**: Your stiff WIFA boots will resist deep knee bends at first. This is temporary. Skate 20-minute sessions the first week, building to full sessions over 3 weeks. Don't heat-mold them yourself — take them to a pro shop if needed.
-
-6. **Get a coach.** YouTube is excellent supplemental material, but nothing replaces a coach watching you in real-time. Most rinks offer adult group lessons for around $15-20/session, or private lessons for $30-50/half hour. A coach every 2 weeks + YouTube self-study is optimal for budget and progress.
-
-7. **Join the community.** r/FigureSkating on Reddit has a large adult skater community. The "Adults Skate Too" brand (https://adultsskatetoo.com) runs community events and has excellent blog guides.
-
-8. **Protective gear is not embarrassing.** Padded shorts (crash pads), wrist guards, and even a helmet for jump practice are smart, not soft. Your 32-year-old body takes longer to heal than a teenager's.
-
 ---
 
-## Progress Tracker
-
-| Phase | Target Dates | Status |
-|-------|-------------|--------|
-| Phase 1: Foundation | Weeks 1-6 | ⬜ |
-| Phase 2: Building Control | Weeks 7-14 | ⬜ |
-| Phase 3: Edges & Turns | Weeks 15-24 | ⬜ |
-| Phase 4: Freestyle Intro | Weeks 25-40 | ⬜ |
-| Phase 5: Intermediate | Weeks 41-60 | ⬜ |
-| Phase 6: Advanced | Months 16-24+ | ⬜ |
-
----
-
-*Last updated: March 2026. Video links verified at time of writing.*
