@@ -1,5 +1,8 @@
 \documentclass[letterpaper,11pt]{article}
 
+\input{glyphtounicode}
+\pdfgentounicode=1
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -67,6 +70,8 @@
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemiii}{\raisebox{0.15ex}{\scriptsize$\bullet$}}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -82,109 +87,83 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\Large PURUPURUNAME} & Email: \href{mailto:PURUPURUMAIL}{PURUPURUMAIL}\\
-  Mobile: PURUPURUPHONE \\
+  Senior Go / Backend Engineer, Distributed Systems & Mobile: PURUPURUPHONE \\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
 \section{Profile}
-      Polyglot software developer with 8+ years of experience in web development and big data.
+      Senior backend engineer with 10 years of experience in distributed systems, working with Go since 2021. I own architecture and delivery end to end, from workflow engines and event-driven platforms to horizontally sharded monitoring systems, across development, testing strategy and production.
 
-      Writing Go for the better part of past 4 years.
-      
-      My top skills include Go, Java, Kafka, Cassandra, Spring Framework, Spark.
+      Core skills: Go, Kafka, PostgreSQL, Temporal, Kubernetes, Java.
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
 \resumeSubHeadingListStart
     \resumeSubheading
-      {SRP Hyperplay}{}
-      {Administrator}{Apr 2024 - Present}
+      {Contract Work}{}
+      {Senior Software Engineer (Contractor)}{Sep 2025 - Aug 2026}
       \resumeItemListStart
-        \resumeItem{Senior Go Developer @ Kubeark}{
-	  Developed and enhanced core business products as part of a small but highly efficient team.
+        \resumeItem{NOC Monitoring Platform (Feb 2026 - Aug 2026)}{
+	  Senior engineer and top contributor on a Go network monitoring platform built on Kafka, PostgreSQL and Kubernetes. 
+    Owned the architecture and delivery of core backend areas and worked directly with the client on requirements and acceptance.
 
-		\labelitemii \ Continued the design and implementation of a workflow engine with state management provided by Temporal.
+	  \begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+	    \item Architected and delivered horizontal sharding of the platform across multiple Zabbix instances.
+	    \item Owned the testing and performance validation strategy: integration testing, load testing and the performance acceptance process agreed with the client.
+	    \item Led the migration from the client's previous monitoring solution and delivered a broad range of platform features.
+	  \end{itemize}
+	}
+        \resumeItem{SaaS Platform (Sep 2025 - Feb 2026)}{
+	  Senior backend engineer developing Go microservices for a multi-tenant SaaS platform.
+	}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Kubeark}{}
+      {Senior Go Developer (Contractor)}{Apr 2024 - Aug 2025}
+      \resumeItemListStart
+        \simpleResumeItem{
+	  Senior engineer in a small team building a Kubernetes automation platform with a low-code workflow engine and AI agents, contributing to architecture and technical direction.
 
-		\labelitemii \ Developed in-house modules to gradually replace Temporal.
-
-		\labelitemii \ Integrated external data sources with the workflow engine.
-
-		\labelitemii \ Added the ability to declare agentic AI implementations in the workflow engine.
-
-		\labelitemii \ Efficiently migrated projects from Python to Go by employing highly customized code generation.
+	  \begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+	    \item Led the evolution of the Temporal-based workflow engine, including replacing parts of Temporal with in-house components.
+	    \item Designed the event source framework integrating external systems (databases, Kafka, email) with workflows.
+	    \item Brought agentic AI into the platform, allowing AI agents to be declared and run as workflow steps.
+	    \item Drove the backend migration from Python to Go using custom code generation, including the API gateway with its authentication, authorization and licensing.
+	  \end{itemize}
 	}
       \resumeItemListEnd
     \resumeSubheading
       {eSolutions}{}
       {Senior Software Developer}{Aug 2018 - Mar 2024}
       \resumeItemListStart
-	\resumeItem{Senior Go Developer}{
-	  Thanks to my previous experience I quickly became proficient in Go and fulfilled the following responsibilities for our clients:
+	\resumeItem{Go Adoption \& Architecture}{
+	  Introduced and led Go adoption across client teams through POCs, presentations, workshops and mentoring.
 
-          \labelitemii \ Application architecture and design. Setting up github and gitlab and github CI/CD, project structure, logging, dependency injection, error handling, api documentation, http clients, configuration, testing, data access patterns,
-	  mocking, best practices and examples. 
-
-	  \labelitemii \ Spearheaded Go development across teams through thorough POCs, presentations, workshops, demos, mentoring. 
-
-	  \labelitemii \ Developed highly scalable solutions using AWS services such as SQS and DynamoDB to satisfy production requirements.
+	  \begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+	    \item Defined the Go service architecture and standards used across teams: project structure, CI/CD, configuration, error handling, testing and data access.
+	    \item Designed scalable AWS-based services (SQS, DynamoDB) for production workloads.
+	  \end{itemize}
 	}
-        \resumeItem{Big Data}{
-          Responsible for designing and implementing common big data requirements: 
-	  
-	  \labelitemii \ Acquisition via NiFi \& MiNiFi.
+	\resumeItem{Big Data}{
+	  Designed and built end-to-end data pipelines: NiFi ingestion, Kafka Streams and Spark processing, Cassandra/HDFS/Solr storage.
 
-	  \labelitemii \ Storage using Cassandra, HDFS, Solr, Redis, RDBMS.
-
-	  \labelitemii \ Processing using Kafka Streams, Kafka low level api consumer and producer, Kafka using Spring Cloud Stream.
-
-	  \labelitemii \ Enrichment using Kafka, Spark with Scala.
-
-	  \labelitemii \ Application development such as: adding customized continuous delivery and configurability to our edge data 
-	  ingestion application, building a reliable Avro schema registry backed by Apache Zookeeper, adding features to an authentication and authorization API gateway.
-
-	  \labelitemii \ Reduced memory allocation to 50\%, CPU usage to 50\% and message sizes to 15\% via a second Avro schema registry implementation. The implementation featured efficient thread synchronization using a low-level implementation equivalent of Go's singleflight, O(1) memory allocation and Kafka Topic backing, allowing for a 0 dependency deployment.
-	  
-          \labelitemii \ Monitored and debugged applications and data flows using ELK and Grafana.
-          
-          \labelitemii \ Advocated and delivered stream processing using Apache Kafka for significant code quality and 
-	  performance improvements as a replacement to Spark batch processing.}
-
-        \resumeItem{Web development - Java 8+ \& Typescript}{
-	  Developed both front-end on Angular 7+ and backend on Spring Boot for multiple microservices used by a major retail chain. 
-
-	  \labelitemii \ Developed complex queries using the JPA Criteria Api. 
-
-	  \labelitemii \ Innovated by creating a library which simplifies the development experience for writing code that returns filtered lists for REST api's.
-
-	  \labelitemii \ Tested backends using Spock, testcontainers as well as shell started docker containers. 
-
-	  \labelitemii \ Worked on and introduced new team members to projects that use our custom framework for event sourcing and command query responsibility segregation.  
-
-	  \labelitemii \ Configured and customized Angular Authentication and Authorization modules to fit multi-token requirements 
-	  in multiple projects and across multiple OIDC client variants.
-
-	\resumeItem{Others} {
-
-	  \labelitemii \ Held a two day course on Kafka and how to use it with Spring Kafka.
-	  
-	  \labelitemii \ Held Java, Spring and Git courses to three generations of interns and mentored junior colleagues.
-
-	  \labelitemii \ Used Agile across all projects either as Scrum or as Kanban.
-
-	  \labelitemii \ Used Kubernetes, Docker, kustomize/helm together with bamboo/jenkins and Argo for most if not all projects and was repsonsible for further configuring CI/CD.
-
-	  \labelitemii \ Knowledge and experience in using linux, bash, docker-compose, git and various command-line utilities.
-
-	  \labelitemii \ Used docker, docker-compose, Dockerbuild, gitops, kubernetes across all projects for deployment, 
-	  local testing and development.
-
-	  \labelitemii \ Used microservices architecture extensively across all projects.
-
-	  \labelitemii \ Took part in the interviewing process for Java internships and Go developer positions.
+	  \begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+	    \item Led the move from Spark batch processing to Kafka stream processing.
+	    \item Designed and built a zero-dependency, Kafka-backed Avro schema registry, moving messaging from schemaless JSON to Avro.
+	    \item Added continuous delivery and configurability to the edge data ingestion application, and built features for the platform's authentication and authorization gateway.
+	  \end{itemize}
 	}
-}
+	\resumeItem{Web Development (Java/Spring Boot, Angular)}{
+	  Developed backend and frontend for multiple microservices for a major retail chain.
+
+	  \begin{itemize}[leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt]
+	    \item Built an internal library for filtered REST list endpoints, and onboarded team members onto the in-house event sourcing / CQRS framework.
+	  \end{itemize}
+	}
+	\resumeItem{Leadership \& Mentoring}{
+	  Ran Kafka and Java/Spring/Git training courses, mentored interns and junior colleagues, and interviewed candidates for Java and Go roles.
+	}
       \resumeItemListEnd
-      \newline\newline\newline
     \resumeSubheading
       {Soft Vision Media}{}
       {Java Developer}{Jul 2017 - Mar 2018}
@@ -194,7 +173,7 @@
       \resumeItemListEnd
     \resumeSubheading
       {Eau de Web}{}
-      {Full-Stack Drupal Developer Internship}{July 2016 - September 2016}
+      {Full-Stack Drupal Developer Intern}{Jul 2016 - Sep 2016}
       \resumeItemListStart
         \simpleResumeItem{
           Built and integrated an IMAP module. Helped build the permission system for a custom collaborative business process flow. Integrated code with external APIs. Configured and customized simple websites. Maintained existing applications through tasks such as creating imports, exports, cleaning data, fixing bugs.}
@@ -204,16 +183,28 @@
 
 
 %--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
+\section{Skills}
   \resumeSubHeadingListStart
     \item{
-      \textbf{Programming Languages}{: Go, Java, Typescript, Scala, Groovy, SQL, Javascript}
+      \textbf{Languages}{: Go, Java, TypeScript, Python, Scala, Groovy, SQL, JavaScript}
     }
     \item{
-      \textbf{Relevant technologies}{: Kafka, Temporal, Spring Framework, Spark, Angular, Hadoop, Keycloak, Cassandra, NiFi, NodeRED, AWS SQS, AWS DynamoDB}
+      \textbf{Architecture}{: Distributed systems, microservices, event-driven architecture, REST, gRPC, workflow engines}
     }
     \item{
-    \textbf{Languages}{: English - C1, German - beginner, French - beginner}
+      \textbf{Messaging \& Data}{: Kafka, PostgreSQL, Redis, Cassandra, OpenSearch, Spark, NiFi}
+    }
+    \item{
+      \textbf{Platform \& Infrastructure}{: Kubernetes, Docker, Helm, CI/CD, AWS, Temporal, Linux}
+    }
+    \item{
+      \textbf{Observability \& Monitoring}{: Zabbix, VictoriaMetrics, Grafana, SNMP}
+    }
+    \item{
+      \textbf{Frameworks}{: Spring Boot, React, Angular, Keycloak}
+    }
+    \item{
+      \textbf{Spoken languages}{: English (C1), German (beginner), French (beginner)}
     }
   \resumeSubHeadingListEnd
 
